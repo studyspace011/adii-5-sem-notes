@@ -1,0 +1,918 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>MIC - 5: भारतीय काव्यशास्त्र (Indian Poetics)</title><meta name="data-notion-page-icon" content="🇮🇳"/><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%87%AE%F0%9F%87%B3%3C%2Ftext%3E%3C%2Fsvg%3E"/><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+	/* Paint a complete callout box on every PDF page fragment. */
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+/*
+ * Toggles and callouts hold arbitrary content, so they can easily be taller
+ * than a page. They must stay breakable: avoiding breaks inside them makes
+ * Chromium push the whole block onto the next page, which leaves the previous
+ * page mostly empty before every long toggle.
+ */
+details,
+aside {
+	margin: 1.25em 0;
+}
+
+/* Keep a toggle's title on the same page as the start of its content. */
+summary {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+/*
+ * Toggle headings render as <h1/h2/h3 style="display:inline-block"> inside
+ * <summary>. Without this reset, the heading's margin-top pushes it below the
+ * ::marker (▼), so the triangle and the title appear on separate lines.
+ */
+summary h1,
+summary h2,
+summary h3,
+summary h4 {
+	margin-top: 0;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="d8f24f8d-7cec-8341-93ac-0152e43d4929" class="page sans" data-notion-page-icon="🇮🇳"><header><div class="page-header-icon undefined"><span class="icon" data-emoji="🇮🇳"></span></div><h1 class="page-title" dir="auto"><strong>MIC - 5: भारतीय काव्यशास्त्र (Indian Poetics)</strong></h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-date"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/calendar_gray.svg" style="width:14px;height:14px;display:block"/></span>Created</th><td><time datetime="2026-10-03">October 3, 2026</time></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Class</th><td><span class="selected-value select-value-color-blue">HINDI</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>CODE</th><td>5</td></tr><tr class="property-row property-row-created_by"><th><span class="icon property-icon"><img src="https://app.notion.com/icons/user-circle_gray.svg" style="width:14px;height:14px;display:block"/></span>Created by</th><td><span class="user"><span class="icon text-icon user-icon"><span class="user-icon-inner">S</span></span>Study Space</span></td></tr></tbody></table></header><div class="page-body"><h2 id="3ee24f8d-7cec-8054-b2ea-ebc5a16532ce" class="" dir="auto">🎯 Unit 1: भारतीय काव्यशास्त्र का सामान्य परिचय (General Introduction to Indian Poetics)</h2><h3 id="3ee24f8d-7cec-80d9-99ce-f06dbd9db7f9" class="" dir="auto">1.1 भारतीय काव्यशास्त्र की मूलभूत अवधारणाएं (Basic Concepts of Indian Poetics)</h3><hr id="3ee24f8d-7cec-8098-be1f-c81eac4afa2f" dir="auto"/><h3 id="3ee24f8d-7cec-8060-b23a-c60efcdcad1d" class="" dir="auto">1.1.1 भारतीय काव्यशास्त्र का सामान्य परिचय (General Introduction to Indian Poetics)</h3><h4 id="3ee24f8d-7cec-805b-b575-e6e8b100d6e6" class="" dir="auto">1. काव्यशास्त्र क्या है? (Understanding the Core Concept)</h4><p id="3ee24f8d-7cec-806d-9fa7-cdba87235c55" class="" dir="auto">साधारण शब्दों में, जैसे व्याकरण (Grammatical Syntax) हमें भाषा को शुद्ध बोलना और लिखना सिखाता है, ठीक उसी तरह <strong>काव्यशास्त्र (Poetics/Aesthetics)</strong> हमें यह सिखाता है कि <strong>साहित्य या कविता की रचना कैसे की जाती है, उसमें सुंदरता (Aesthetic Value) कहाँ से आती है, और किसी कविता की गुणवत्ता को कैसे परखा जाता है।</strong></p><ul id="3ee24f8d-7cec-80ff-aa41-f82471642942" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>काव्यशास्त्र = काव्य + शास्त्र</strong></li></ul><ul id="3ee24f8d-7cec-8061-9fb4-f1d5b80bcedb" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>काव्य:</strong> वह शब्दावली या रचना जो मानव हृदय में भाव, संवेदना, रस और आनंद उत्पन्न करे।</li></ul><ul id="3ee24f8d-7cec-80ee-8c99-ff3f5f0b03ee" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>शास्त्र:</strong> किसी विषय का नियमबद्ध, तर्कसंगत और वैज्ञानिक अध्ययन (Systematic Science &amp; Philosophy)।</li></ul><p id="3ee24f8d-7cec-8081-a84f-fd5296082ce8" class="" dir="auto">यह केवल नियमों की किताब नहीं है, बल्कि यह साहित्य की <strong>समीक्षात्मक आँख (Analytical Vision)</strong> है।</p><hr id="3ee24f8d-7cec-8022-977c-e3eeaf8e6ea0" dir="auto"/><h4 id="3ee24f8d-7cec-8035-9548-e4d2411853d6" class="" dir="auto">2. नामकरण एवं ऐतिहासिक विकास (Historical Evolution &amp; Terminology)</h4><p id="3ee24f8d-7cec-8060-b96e-c6ef22b75a61" class="" dir="auto">भारतीय परंपरा में इस विषय को अलग-अलग युगों में विभिन्न नामों से पुकारा गया:</p><ol type="1" id="3ee24f8d-7cec-8039-8132-d8aeb5032d80" class="numbered-list" start="1" dir="auto"><li><strong>क्रियाकल्प (Kriya-Kalpa):</strong> प्राचीन काल (जैसे वात्स्यायन के &#x27;कामसूत्र&#x27;) में काव्य-रचना की कला को क्रियाकल्प कहा जाता था।</li></ol><ol type="1" id="3ee24f8d-7cec-800c-91b6-ff7f9549d42b" class="numbered-list" start="2" dir="auto"><li><strong>अलंकारशास्त्र (Alankar Shastra):</strong> शुरुआती दौर में अलंकारों को काव्य का सबसे प्रमुख हिस्सा माना गया, इसलिए आचार्य भामह, वामन और उद्भट के समय इसे &#x27;अलंकारशास्त्र&#x27; कहा गया।</li></ol><ol type="1" id="3ee24f8d-7cec-8044-9347-f1b5f2d77280" class="numbered-list" start="3" dir="auto"><li><strong>सौंदर्यशास्त्र (Aesthetics):</strong> वामन ने स्पष्ट कहा — <em>&quot;सौंदर्यमलंकारः&quot;</em> (सुंदरता ही अलंकार है)। इस दृष्टि से यह काव्य के सौंदर्य को परखने का शास्त्र बना।</li></ol><ol type="1" id="3ee24f8d-7cec-80e8-8642-f649d8b338ef" class="numbered-list" start="4" dir="auto"><li><strong>साहित्यशास्त्र / काव्यशास्त्र (Poetics):</strong> आगे चलकर जब इसमें रस, ध्वनि, गुण, रीति आदि सभी तत्त्वों का समावेश हुआ, तब आचार्य राजशेखर और मम्मट के समय से इसे <strong>&#x27;काव्यशास्त्र&#x27;</strong> या <strong>&#x27;साहित्यशास्त्र&#x27;</strong> का सर्वमान्य नाम मिला।</li></ol><hr id="3ee24f8d-7cec-80e0-8bb9-ed5540fe9939" dir="auto"/><h4 id="3ee24f8d-7cec-80a7-9d04-f447378b6d67" class="" dir="auto">3. भारतीय काव्यशास्त्र का मुख्य लक्ष्य (Primary Objective)</h4><p id="3ee24f8d-7cec-80de-b0f1-c37c6f18441c" class="" dir="auto">भारतीय काव्यशास्त्रियों का मुख्य प्रश्न यह था: <strong>&quot;काव्य की आत्मा (Soul of Poetry) क्या है?&quot;</strong><br/>अर्थात, वह कौन-सा सबसे मुख्य तत्त्व (Core Element) है जिसके बिना किसी रचना को कविता माना ही नहीं जा सकता?</p><p id="3ee24f8d-7cec-80b6-bac5-cc78051fec39" class="" dir="auto">इसी &#x27;आत्मा&#x27; की खोज के परिणामस्वरूप <strong>6 मुख्य सम्प्रदाय (6 Major Schools of Poetics)</strong> अस्तित्व में आए।</p><hr id="3ee24f8d-7cec-800d-93f2-dbead56ec17d" dir="auto"/><h4 id="3ee24f8d-7cec-80be-b0bc-d5ec3ce86143" class="" dir="auto">4. भारतीय काव्यशास्त्र के 6 प्रमुख सम्प्रदाय (The 6 Major Schools)</h4><p id="3ee24f8d-7cec-8009-b360-e14a759428d7" class="" dir="auto">ये छहों सम्प्रदाय भारतीय काव्यशास्त्र के छह मजबूत स्तंभ हैं। आइए इन्हें आसान तरीके से समझते हैं:</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="3ee24f8d-7cec-80dc-bc45-dbe80eb1f5fd" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                          ┌─────────────────────────────────────────┐
+                          │       भारतीय काव्यशास्त्र के 6 सम्प्रदाय        │ 
+                          └────────────────────┬────────────────────┘
+                                               │
+   ┌───────────┬───────────────┬───────────────┴───────────┬───────────────┬───────────────┐
+   │           │               │                           │               │               │
+  ▼            ▼               ▼                           ▼               ▼               ▼
+	1. रस       2. अलंकार       3. रीति                    4. ध्वनि          5. वक्रोक्ति       6. औचित्य
+(भरतमुनि)      (भामह)          (वामन)                    (आनंदवर्धन)        (कुंतक)          (क्षेमेन्द्र)</code></pre><h4 id="3ee24f8d-7cec-802f-aeef-c85a5e6fec9d" class="" dir="auto">(1) रस सम्प्रदाय (Rasa School)</h4><ul id="3ee24f8d-7cec-80d5-a7d6-db3cdf77f504" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रवर्तक:</strong> भरतमुनि (ग्रंथ: <em>नाट्यशास्त्र</em>)</li></ul><ul id="3ee24f8d-7cec-80e5-ba11-cd2b77ec6cf2" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मूलमंत्र:</strong> <em>&quot;न हि रसादृते कश्चिदप्यर्थः प्रवर्तते&quot;</em> (रस के बिना काव्य का कोई अर्थ आगे नहीं बढ़ता)।</li></ul><ul id="3ee24f8d-7cec-80a5-9ce0-d47b35dc52c0" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>आसान व्याख्या:</strong> कविता का मुख्य उद्देश्य पाठक या श्रोता के दिल में भावनाएँ (Emotions) जगाना है। जैसे करुणा, प्रेम, उत्साह, हास्य आदि। अगर कविता पढ़कर दिल में कोई भाव न जागे, तो वह व्यर्थ है।</li></ul><h4 id="3ee24f8d-7cec-8058-8a65-f55b9805fd05" class="" dir="auto">(2) अलंकार सम्प्रदाय (Alankar School)</h4><ul id="3ee24f8d-7cec-8072-9606-f7f690b9053f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रवर्तक:</strong> आचार्य भामह (ग्रंथ: <em>काव्यालंकार</em>)</li></ul><ul id="3ee24f8d-7cec-8092-82c7-f88d6ab9e062" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मूलमंत्र:</strong> <em>&quot;न कान्तमपि निर्भूषं विभाति वनितामुखम्&quot;</em> (जैसे किसी सुंदरी का मुख आभूषणों के बिना सुंदर नहीं लगता, वैसे ही कविता बिना अलंकार के सुंदर नहीं लगती)।</li></ul><ul id="3ee24f8d-7cec-8069-94f5-eb0f72d32686" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>आसान व्याख्या:</strong> भाषा को अलंकृत, सुंदर और सजावटी बनाकर प्रस्तुत करना ही काव्य की जान है।</li></ul><h4 id="3ee24f8d-7cec-8041-a7ac-c824129c10f3" class="" dir="auto">(3) रीति सम्प्रदाय (Riti School)</h4><ul id="3ee24f8d-7cec-80eb-a120-fc1ab764b5f9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रवर्तक:</strong> आचार्य वामन (ग्रंथ: <em>काव्यालंकार सूत्रवृत्ति</em>)</li></ul><ul id="3ee24f8d-7cec-8069-97d7-c33b472457c6" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मूलमंत्र:</strong> <em>&quot;रीतिरात्मा काव्यस्य&quot;</em> (विशिष्ट पद-रचना ही काव्य की आत्मा है)।</li></ul><ul id="3ee24f8d-7cec-802f-adc5-d107fb6c3bc9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>आसान व्याख्या:</strong> रीति का अर्थ है <strong>शैली (Style)</strong>। शब्दों को किस खास क्रम, मिठास (माधुर्य गुण) या तेजी (ओज गुण) के साथ सजाकर लिखा गया है, यही काव्य की पहचान है।</li></ul><h4 id="3ee24f8d-7cec-8062-af39-cc433836ed9f" class="" dir="auto">(4) ध्वनि सम्प्रदाय (Dhvani School)</h4><ul id="3ee24f8d-7cec-801b-9421-e3e089cf2340" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रवर्तक:</strong> आचार्य आनंदवर्धन (ग्रंथ: <em>ध्वन्यालोक</em>)</li></ul><ul id="3ee24f8d-7cec-8059-9686-ca7b89df3fda" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मूलमंत्र:</strong> <em>&quot;काव्यस्यात्मा ध्वनिरिति&quot;</em> (ध्वनि ही काव्य की आत्मा है)।</li></ul><ul id="3ee24f8d-7cec-8094-a21a-f091bec319fc" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>आसान व्याख्या:</strong> कविता का असली आनंद सीधे लिखे शब्दों (वाच्यार्थ) में नहीं, बल्कि उसके पीछे छिपे हुए <strong>व्यंग्यार्थ/इशारे (Suggested Meaning/Dhvani)</strong> में होता है।</li></ul><h4 id="3ee24f8d-7cec-801a-bd8f-d790d78000dd" class="" dir="auto">(5) वक्रोक्ति सम्प्रदाय (Vakrokti School)</h4><ul id="3ee24f8d-7cec-8033-905e-cfa5fbecee3b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रवर्तक:</strong> आचार्य कुंतक (ग्रंथ: <em>वक्रोक्तिजीवितम्</em>)</li></ul><ul id="3ee24f8d-7cec-8081-85d0-ebafc0197cf1" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मूलमंत्र:</strong> <em>&quot;वक्रोक्तिः काव्यजीवितम्&quot;</em> (वैचित्र्यपूर्ण/टेढ़ा कथन ही काव्य की जान है)।</li></ul><ul id="3ee24f8d-7cec-8066-962c-d5e63e8cd9b5" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>आसान व्याख्या:</strong> बात को साधारण तरीके से न कहकर अनूठे, घुमावदार और कलात्मक ढंग (Oblique &amp; Artistic Expression) से कहना ही कविता है।</li></ul><h4 id="3ee24f8d-7cec-8075-ad4f-e945aa00ebe6" class="" dir="auto">(6) औचित्य सम्प्रदाय (Auchitya School)</h4><ul id="3ee24f8d-7cec-80a3-a0f5-d71eabdff730" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रवर्तक:</strong> आचार्य क्षेमेन्द्र (ग्रंथ: <em>औचित्यविचारचर्चा</em>)</li></ul><ul id="3ee24f8d-7cec-807a-8d5e-d8adfd527c82" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मूलमंत्र:</strong> <em>&quot;औचित्यं रससिद्धस्य स्थिरं काव्यस्य जीवितम्&quot;</em> (औचित्य ही काव्य का स्थायी प्राण है)।</li></ul><ul id="3ee24f8d-7cec-80c2-bd30-e006dedd62cb" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>आसान व्याख्या:</strong> <strong>औचित्य = सही जगह पर सही चीज़ का होना (Appropriateness/Balance)</strong>। अलंकार, रस, रीति या गुण चाहे कितने भी अच्छे हों, अगर वे सही स्थान और सीमा में प्रयोग नहीं होंगे तो काव्य का सौंदर्य नष्ट हो जाएगा।</li></ul><hr id="3ee24f8d-7cec-8073-8785-eed0f3c6581a" dir="auto"/><figure id="3ee24f8d-7cec-80af-a105-f35332af2038" class="image" data-notion-image="image.png" dir="ltr"><a href="image.png"><img style="width:890.0377197265625px" src="image.png"/></a></figure><hr id="3ee24f8d-7cec-800f-a1b6-f96150a16536" dir="auto"/><h3 id="3ee24f8d-7cec-800a-a479-d05c3c05be9e" class="" dir="auto">💡 Quick Recall Table (परीक्षा हेतु त्वरित याद करने की तालिका)</h3><table id="3ee24f8d-7cec-8012-a8b7-c2dee96e9de1" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-8053-8393-fa1a442ad3f6" dir="ltr"><th id="&lt;eMr" class="simple-table-header-color simple-table-header">क्र.सं.</th><th id="QigD" class="simple-table-header-color simple-table-header">सम्प्रदाय (School)</th><th id="@bns" class="simple-table-header-color simple-table-header">मुख्य आचार्य (Founder)</th><th id="Oq=o" class="simple-table-header-color simple-table-header">प्रमुख ग्रंथ (Key Text)</th><th id="dUkE" class="simple-table-header-color simple-table-header">काव्य की आत्मा (Soul of Poetry)</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80ab-ab8e-c1fec1befcf3" dir="ltr"><td id="&lt;eMr" class="">1</td><td id="QigD" class=""><strong>रस सम्प्रदाय</strong></td><td id="@bns" class="">भरतमुनि</td><td id="Oq=o" class="">नाट्यशास्त्र</td><td id="dUkE" class="">अलौकिक आनंद और भाव (Emotions)</td></tr><tr id="3ee24f8d-7cec-8035-b2e0-d4d32a1512ab" dir="ltr"><td id="&lt;eMr" class="">2</td><td id="QigD" class=""><strong>अलंकार सम्प्रदाय</strong></td><td id="@bns" class="">आचार्य भामह</td><td id="Oq=o" class="">काव्यालंकार</td><td id="dUkE" class="">भाषा का सौंदर्य व आभूषण (Figures of Speech)</td></tr><tr id="3ee24f8d-7cec-8099-9602-e1e11bcfdf45" dir="ltr"><td id="&lt;eMr" class="">3</td><td id="QigD" class=""><strong>रीति सम्प्रदाय</strong></td><td id="@bns" class="">आचार्य वामन</td><td id="Oq=o" class="">काव्यालंकार सूत्रवृत्ति</td><td id="dUkE" class="">विशिष्ट रचना शैली (Style of Writing)</td></tr><tr id="3ee24f8d-7cec-80ee-b03a-e35218d51424" dir="ltr"><td id="&lt;eMr" class="">4</td><td id="QigD" class=""><strong>ध्वनि सम्प्रदाय</strong></td><td id="@bns" class="">आनंदवर्धन</td><td id="Oq=o" class="">ध्वन्यालोक</td><td id="dUkE" class="">छिपा हुआ व्यंग्यार्थ (Suggested Meaning)</td></tr><tr id="3ee24f8d-7cec-806e-9132-ec6ba732fb42" dir="ltr"><td id="&lt;eMr" class="">5</td><td id="QigD" class=""><strong>वक्रोक्ति सम्प्रदाय</strong></td><td id="@bns" class="">आचार्य कुंतक</td><td id="Oq=o" class="">वक्रोक्तिजीवितम्</td><td id="dUkE" class="">उक्ति का अनूठापन (Oblique Expression)</td></tr><tr id="3ee24f8d-7cec-8087-9f4a-e38134dfc122" dir="ltr"><td id="&lt;eMr" class="">6</td><td id="QigD" class=""><strong>औचित्य सम्प्रदाय</strong></td><td id="@bns" class="">आचार्य क्षेमेन्द्र</td><td id="Oq=o" class="">औचित्यविचारचर्चा</td><td id="dUkE" class="">सभी तत्त्वों का सही संतुलन (Appropriateness)</td></tr></tbody></table><hr id="3ee24f8d-7cec-8080-ab45-cdead0c2cd84" dir="auto"/><h3 id="3ee24f8d-7cec-802d-a986-e2e30639b425" class="" dir="auto">1.1.2 काव्य-लक्षण (Characteristics &amp; Definitions of Poetry)</h3><hr id="3ee24f8d-7cec-8048-9776-fbf504a1d99f" dir="auto"/><h4 id="3ee24f8d-7cec-8002-922e-fbc9c55fc84d" class="" dir="auto">1. काव्य-लक्षण का क्या अर्थ है? (Concept &amp; Meaning)</h4><p id="3ee24f8d-7cec-8074-be2e-e66ca39f3e52" class="" dir="auto">&quot;लक्षण&quot; का अर्थ होता है — <strong>परिभाषा (Definition), पहचान का माध्यम या अनिवार्य गुण (Essential Criteria)।</strong></p><p id="3ee24f8d-7cec-80af-bd12-d70ccc258bdd" class="" dir="auto">जब आचार्यों के सामने यह सवाल आया कि <em>&quot;दुनिया की हर लिखित या बोली गई बात कविता/काव्य क्यों नहीं होती?&quot;</em>, तो उन्होंने उन तत्त्वों की खोज की जो किसी साधारण वाक्य को &#x27;काव्य&#x27; का दर्जा देते हैं। इन्हीं अनिवार्य कसौटियों और परिभाषाओं को काव्यशास्त्र में <strong>&#x27;काव्य-लक्षण&#x27;</strong> कहा गया।</p><hr id="3ee24f8d-7cec-80de-8803-ce40b284ec08" dir="auto"/><h4 id="3ee24f8d-7cec-805f-908a-d3db102f1eb9" class="" dir="auto">2. काव्य-लक्षण के विकास के 3 मुख्य चरण (Historical Evolution)</h4><p id="3ee24f8d-7cec-807f-b2f3-ed8b8f54e31f" class="" dir="auto">भारतीय आचार्यों ने काव्य-लक्षण तय करने में 3 अलग-अलग दृष्टिकोण अपनाए:</p><ol type="1" id="3ee24f8d-7cec-8054-bd61-cfe3835b5c0f" class="numbered-list" start="1" dir="auto"><li><strong>शब्द और अर्थ को प्रधान मानने वाले आचार्य:</strong> भामह, वामन, रुद्रट, मम्मट आदि। (इन्होंने शब्द और उसके अर्थ के संतुलन पर ज़ोर दिया)।</li></ol><ol type="1" id="3ee24f8d-7cec-80e0-af84-ccb6ac8410bd" class="numbered-list" start="2" dir="auto"><li><strong>केवल &#x27;शब्द&#x27; को प्रधान मानने वाले आचार्य:</strong> दंडी, पंडितराज जगन्नाथ आदि। (इनका मानना था कि सुंदर शब्द ही काव्य का मूल आधार है)।</li></ol><ol type="1" id="3ee24f8d-7cec-80f4-acb5-d41a684292fa" class="numbered-list" start="3" dir="auto"><li><strong>रस और भाव को प्रधान मानने वाले आचार्य:</strong> आनंदवर्धन, आचार्य विश्वनाथ आदि। (इन्होंने आंतरिक अनुभूति और &#x27;रस&#x27; को काव्य की परिभाषा माना)।</li></ol><hr id="3ee24f8d-7cec-8001-ba80-e2568604a85b" dir="auto"/><h4 id="3ee24f8d-7cec-80a0-bfff-e8f08a65d6f6" class="" dir="auto">3. प्रमुख प्राचीन एवं मध्यकालीन आचार्यों के अनुसार काव्य-लक्षण</h4><hr id="3ee24f8d-7cec-80d7-bdf7-c3f346c33af7" dir="auto"/><h4 id="3ee24f8d-7cec-8046-9409-ff6dfbf3d2ad" class="" dir="auto">(क) आचार्य भामह (6ठी शताब्दी) — शब्द और अर्थ का मेल</h4><ul id="3ee24f8d-7cec-8015-b256-cf9b10026348" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रसिद्ध संस्कृत सूत्र:</strong></li></ul><blockquote id="3ee24f8d-7cec-80d0-8b95-c34b2d3efc73" class="" dir="auto"><strong>&quot;शब्दार्थौ सहितौ काव्यम्&quot;</strong> (<em>काव्यालंकार</em>)</blockquote><ul id="3ee24f8d-7cec-80ba-957b-cb4f9fe7d5f8" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>व्याख्या:</strong> शब्द (Word) और अर्थ (Meaning) का सुंदर, भावपूर्ण और साथ-साथ (सहित) होना ही काव्य है।</li></ul><ul id="3ee24f8d-7cec-8055-a471-fb74151ebc9c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>विशेषता:</strong> भामह ने माना कि न केवल शब्द अकेले काव्य बना सकता है और न केवल अर्थ। जैसे शरीर के बिना आत्मा और आत्मा के बिना शरीर अधूरा है, वैसे ही शब्द और अर्थ का परस्पर मेल ही काव्य है।</li></ul><hr id="3ee24f8d-7cec-809a-a6b2-c65d49c33838" dir="auto"/><h4 id="3ee24f8d-7cec-8033-aa2e-e18903534b8a" class="" dir="auto">(ख) आचार्य मम्मट (11वीं शताब्दी) — त्रिगुण समन्वय (सर्वमान्य परिभाषा)</h4><ul id="3ee24f8d-7cec-8063-b1fc-c7a4447b741b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रसिद्ध संस्कृत सूत्र:</strong></li></ul><blockquote id="3ee24f8d-7cec-806b-8b4b-dd7dc18e01cc" class="" dir="auto"><strong>&quot;तद्दोषौ शब्दार्थौ सगुणावनलंकृती पुनः क्वापि&quot;</strong> (<em>काव्यप्रकाश</em>)</blockquote><ul id="3ee24f8d-7cec-80bf-876c-c7ebd3d868ea" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>व्याख्या:</strong> काव्य वह शब्द और अर्थ का समूह है जो:</li></ul><ol type="1" id="3ee24f8d-7cec-80ee-9b8b-e6f8b64cda3b" class="numbered-list" start="1" dir="auto"><li><strong>अदोषौ:</strong> दोषरहित (व्याकरण और अर्थ संबंधी गलतियों से मुक्त) हो।</li></ol><ol type="1" id="3ee24f8d-7cec-8090-a3f3-cff0693ab8e2" class="numbered-list" start="2" dir="auto"><li><strong>सगुणौ:</strong> गुणों (माधुर्य, ओज, प्रसाद) से युक्त हो।</li></ol><ol type="1" id="3ee24f8d-7cec-8015-97c7-c3e00912accd" class="numbered-list" start="3" dir="auto"><li><strong>अनलंकृती पुनः क्वापि:</strong> सामान्यतः अलंकारों से सजा हो, पर यदि कहीं स्पष्ट अलंकार न भी हो और रस मौजूद हो, तो भी वह काव्य ही कहलाएगा।</li></ol><ul id="3ee24f8d-7cec-8001-9718-fe47f59a75e8" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>विशेषता:</strong> मम्मट की यह परिभाषा सबसे अधिक व्यावहारिक और संतुलित मानी जाती है।</li></ul><hr id="3ee24f8d-7cec-80a6-838b-ddadfb9bdcb3" dir="auto"/><h4 id="3ee24f8d-7cec-80a4-81a1-c1eb33aa7f36" class="" dir="auto">(ग) आचार्य विश्वनाथ (14वीं शताब्दी) — रस की प्रधानता</h4><ul id="3ee24f8d-7cec-809e-8e95-eb573c401ff8" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रसिद्ध संस्कृत सूत्र:</strong></li></ul><blockquote id="3ee24f8d-7cec-80d2-9bf9-e59f8fe1910f" class="" dir="auto"><strong>&quot;वाक्यं रसात्मकं काव्यम्&quot;</strong> (<em>साहित्यदर्पण</em>)</blockquote><ul id="3ee24f8d-7cec-808e-88d4-d158567a8c7b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>व्याख्या:</strong> रस से युक्त (Emotionally rich) वाक्य ही काव्य है।</li></ul><ul id="3ee24f8d-7cec-80be-9114-fc1660bf409c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>विशेषता:</strong> विश्वनाथ ने मम्मट की जटिल परिभाषा का खंडन करते हुए कहा कि काव्य की असली आत्मा &#x27;रस&#x27; है। अगर किसी वाक्य को पढ़कर पाठक के दिल में कोई भाव (प्रेम, करुणा, आनंद) न जागे, तो चाहे उसमें कितने भी गुण और अलंकार क्यों न हों, वह काव्य नहीं बन सकता।</li></ul><hr id="3ee24f8d-7cec-805d-bb7b-d68220eb4ac0" dir="auto"/><h4 id="3ee24f8d-7cec-8079-a23d-ecefff9171b7" class="" dir="auto">(घ) पंडितराज जगन्नाथ (17वीं शताब्दी) — रमणीयता का सिद्धांत</h4><ul id="3ee24f8d-7cec-800f-906e-d4c4fc8ca6eb" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>प्रसिद्ध संस्कृत सूत्र:</strong></li></ul><blockquote id="3ee24f8d-7cec-806d-8ba6-c4c8543c42f0" class="" dir="auto"><strong>&quot;रमणीयार्थ प्रतिपादकः शब्दः काव्यम्&quot;</strong> (<em>रसगंगाधर</em>)</blockquote><ul id="3ee24f8d-7cec-80e1-aaf2-e05c83d9e93a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>व्याख्या:</strong> रमणीय (सुंदर/आनंददायक) अर्थ प्रकट करने वाला शब्द ही काव्य है।</li></ul><ul id="3ee24f8d-7cec-8094-8236-cdeb7975fbac" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>विशेषता:</strong> जगन्नाथ ने &#x27;शब्द&#x27; को मुख्य माना। ऐसा शब्द जो मन को आनंदित कर दे और लोकोत्तर (आलौकिक) चमत्कार पैदा करे, वही काव्य है।</li></ul><hr id="3ee24f8d-7cec-8018-82b7-e7efed186c35" dir="auto"/><figure id="3ee24f8d-7cec-80cf-9359-e6d5855ec646" class="image" data-notion-image="image%201.png" dir="ltr"><a href="image%201.png"><img style="width:890.0377197265625px" src="image%201.png"/></a></figure><hr id="3ee24f8d-7cec-8012-a1ff-deabc0c61c14" dir="auto"/><h4 id="3ee24f8d-7cec-801e-a937-f7e5c28d1891" class="" dir="auto">4. आधुनिक हिंदी विचारकों के अनुसार काव्य-लक्षण</h4><p id="3ee24f8d-7cec-805f-94f0-fb6082cb90c3" class="" dir="auto">भारतीय काव्यशास्त्र की यह परंपरा आधुनिक हिंदी साहित्य के महान आलोचकों तक पहुँची:</p><ul id="3ee24f8d-7cec-800d-9a92-ee9fed9469b8" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>आचार्य रामचंद्र शुक्ल:</strong></li></ul><blockquote id="3ee24f8d-7cec-8017-9317-e6fc5be970c9" class="" dir="auto"><em>&quot;जिस प्रकार आत्मा की मुक्तावस्था ज्ञानदशा कहलाती है, उसी प्रकार हृदय की मुक्तावस्था रसदशा कहलाती है। हृदय की इसी मुक्ति की साधना के लिए मनुष्य की वाणी जो शब्द-विधान करती आई है, उसे कविता कहते हैं।&quot;</em></blockquote><ul id="3ee24f8d-7cec-803c-a552-f0db8941159f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>जयशंकर प्रसाद:</strong></li></ul><blockquote id="3ee24f8d-7cec-8008-9da1-ce4510d9f08c" class="" dir="auto"><em>&quot;काव्य आत्मा की संकल्पात्मक अनुभूति है, जिसका संबंध विश्लेषण, विकल्प या विज्ञान से नहीं है।&quot;</em></blockquote><ul id="3ee24f8d-7cec-800c-a904-c6da5b2a1350" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>सुमित्रानंदन पंत:</strong></li></ul><blockquote id="3ee24f8d-7cec-80a8-bd18-e63a91ac34a6" class="" dir="auto"><em>&quot;कविता हमारे परिपूर्ण क्षणों की वाणी है।&quot;</em></blockquote><hr id="3ee24f8d-7cec-8006-af02-e3fe0576ddde" dir="auto"/><h3 id="3ee24f8d-7cec-80b8-bee0-c97aaeae8a98" class="" dir="auto">💡 Quick Recall Table (परीक्षा हेतु त्वरित रिवीजन)</h3><table id="3ee24f8d-7cec-80d5-9096-fbf1ee938672" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80d6-95ad-e4cca539405b" dir="ltr"><th id="|S?B" class="simple-table-header-color simple-table-header">आचार्य / विद्वान</th><th id="Yo]H" class="simple-table-header-color simple-table-header">काल/शताब्दी</th><th id=";^IN" class="simple-table-header-color simple-table-header">मुख्य ग्रंथ</th><th id="zr\d" class="simple-table-header-color simple-table-header">काव्य-लक्षण का मूल सार</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80ed-aac6-c77db12c7614" dir="ltr"><td id="|S?B" class=""><strong>भामह</strong></td><td id="Yo]H" class="">6ठी शताब्दी</td><td id=";^IN" class="">काव्यालंकार</td><td id="zr\d" class="">शब्द और अर्थ का सहभाव (मेल)</td></tr><tr id="3ee24f8d-7cec-802e-8012-c476ad17a3c2" dir="ltr"><td id="|S?B" class=""><strong>मम्मट</strong></td><td id="Yo]H" class="">11वीं शताब्दी</td><td id=";^IN" class="">काव्यप्रकाश</td><td id="zr\d" class="">दोषरहित, गुणयुक्त व अलंकारयुक्त शब्द-अर्थ</td></tr><tr id="3ee24f8d-7cec-805c-9669-dfa477b91e95" dir="ltr"><td id="|S?B" class=""><strong>विश्वनाथ</strong></td><td id="Yo]H" class="">14वीं शताब्दी</td><td id=";^IN" class="">साहित्यदर्पण</td><td id="zr\d" class="">रसात्मक वाक्य (रस ही काव्य का प्राण)</td></tr><tr id="3ee24f8d-7cec-80fe-a980-d30421edfa37" dir="ltr"><td id="|S?B" class=""><strong>जगन्नाथ</strong></td><td id="Yo]H" class="">17वीं शताब्दी</td><td id=";^IN" class="">रसगंगाधर</td><td id="zr\d" class="">सुंदर और आनंददायक अर्थ प्रकट करने वाला शब्द</td></tr><tr id="3ee24f8d-7cec-80e8-aa1a-ccb92959273c" dir="ltr"><td id="|S?B" class=""><strong>रामचंद्र शुक्ल</strong></td><td id="Yo]H" class="">आधुनिक काल</td><td id=";^IN" class="">चिंतामणि</td><td id="zr\d" class="">हृदय की मुक्तावस्था के लिए किया गया शब्द-विधान</td></tr></tbody></table><hr id="3ee24f8d-7cec-8092-baad-d4e977d629f2" dir="auto"/><h2 id="3ee24f8d-7cec-80c6-9fc0-fd9bd32f25d8" class="" dir="auto">🎯 Unit 2: प्रमुख अलंकार (Major Figures of Speech / Alankars)</h2><hr id="3ee24f8d-7cec-80c3-bc50-c77b93187917" dir="auto"/><h3 id="3ee24f8d-7cec-8088-ba25-cc8472996ec5" class="" dir="auto">2.1.1 श्लेष अलंकार (Shlesh Alankar / Pun)</h3><h4 id="3ee24f8d-7cec-800f-bfd1-e060d85115c8" class="" dir="auto">1. लक्षण एवं अवधारणा (Concept &amp; Definition)</h4><p id="3ee24f8d-7cec-8064-bf20-e1683bb0b879" class="" dir="auto">&#x27;श्लेष&#x27; का शाब्दिक अर्थ होता है — <strong>&quot;चिपका हुआ&quot; (Clinging/Pun)।</strong></p><p id="3ee24f8d-7cec-8051-9351-c7e59e5b8605" class="" dir="auto">जब काव्य में प्रयुक्त <strong>एक ही शब्द के साथ एक से अधिक अर्थ</strong> चिपके हुए या जुड़े होते हैं (अर्थात् परिस्थिति और संदर्भ के अनुसार उस एक शब्द के अलग-अलग अर्थ निकलते हैं), तो वहाँ <strong>&#x27;श्लेष अलंकार&#x27;</strong> होता है।</p><blockquote id="3ee24f8d-7cec-8034-a888-e6bbc9ddc622" class="" dir="auto"><strong>लक्षण सूत्र:</strong> <em>&quot;श्लिष्टैः पदैरनेकार्थाभिधाने श्लेष इष्यते॥&quot;</em><strong>सरल अर्थ:</strong> श्लिष्ट (एक से अधिक अर्थ रखने वाले) शब्दों द्वारा जहाँ अनेक अर्थों का कथन हो, वहाँ श्लेष अलंकार होता है।</blockquote><ul id="3ee24f8d-7cec-80d0-b71f-ffe6f7083d49" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मुख्य पहचान:</strong> शब्द वाक्य में <strong>केवल एक बार</strong> आएगा, लेकिन वाक्य में आए अलग-अलग शब्दों/वस्तुओं के संदर्भ में उसके अर्थ बदल जाएँगे।</li></ul><hr id="3ee24f8d-7cec-807f-b8ff-d72956782342" dir="auto"/><h4 id="3ee24f8d-7cec-8027-8e5d-da07941781b2" class="" dir="auto">2. श्लेष अलंकार के प्रकार (Types of Shlesh Alankar)</h4><p id="3ee24f8d-7cec-80ea-bcbf-ff57d390cbf7" class="" dir="auto">श्लेष अलंकार मुख्य रूप से दो प्रकार का होता है:</p><pre id="3ee24f8d-7cec-80da-bec9-ca9e3147d084" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │    श्लेष अलंकार के भेद (2 Types)        │
+                            └────────────────────┬────────────────────┘
+                                                 │
+            ┌────────────────────────────────────┴────────────────────────────────────┐
+            ▼                                                                         ▼
+   1. अभंग श्लेष (Abhang Shlesh)                                              2. सभंग श्लेष (Sabhang Shlesh)
+   शब्द को बिना तोड़े/खंडित किए                                              शब्द के टुकड़े/खंड (break) करके
+   अनेक अर्थ निकलते हैं।                                                       अलग-अलग अर्थ निकाले जाते हैं।</code></pre><h4 id="3ee24f8d-7cec-8046-b7f3-e7118811471a" class="" dir="auto">(क) अभंग श्लेष (Abhang Shlesh)</h4><p id="3ee24f8d-7cec-80af-baa3-f1cb86f7f768" class="" dir="auto">जहाँ शब्द के टुकड़े किए बिना ही उसके कई अर्थ निकलते हैं।</p><ul id="3ee24f8d-7cec-80ee-a3c9-d4128aa64590" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;रहिमन पानी राखिये...&quot;</em> (यहाँ &#x27;पानी&#x27; शब्द को तोड़े बिना ही चमक, इज्जत और जल अर्थ निकलते हैं)।</li></ul><h4 id="3ee24f8d-7cec-802b-a448-c1f52d845b7d" class="" dir="auto">(ख) सभंग श्लेष (Sabhang Shlesh)</h4><p id="3ee24f8d-7cec-804c-b34a-d4db305847dc" class="" dir="auto">जहाँ शब्द के टुकड़े/खंड (Break) करने पर ही अलग-अलग अर्थ प्राप्त होते हैं।</p><ul id="3ee24f8d-7cec-80e6-9dc0-d68ea3d4d98f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;अजो तरौना ही रह्यो, श्रुति सेवत् इक अंग।&quot;</em></li></ul><ul id="3ee24f8d-7cec-8074-9f99-ee3222915653" class="bulleted-list" dir="auto"><li style="list-style-type:disc">यहाँ <strong>&#x27;तरौना&#x27;</strong> के दो अर्थ बनते हैं:</li></ul><ol type="1" id="3ee24f8d-7cec-8014-b5ef-e8035f622471" class="numbered-list" start="1" dir="auto"><li>बिना टुकड़े किए: <em>तरौना</em> = कान का आभूषण।</li></ol><ol type="1" id="3ee24f8d-7cec-8044-9409-db72cc2be3f0" class="numbered-list" start="2" dir="auto"><li>टुकड़े करके (<em>तर + औना</em>): जो तैर न सका / जिसका उद्धार न हुआ।</li></ol><hr id="3ee24f8d-7cec-800a-9a44-da4852680111" dir="auto"/><h4 id="3ee24f8d-7cec-80c8-b586-f6cbb77a6ebf" class="" dir="auto">3. प्रमुख उदाहरण एवं विस्तृत स्पष्टीकरण (Key Examples with Analysis)</h4><h4 id="3ee24f8d-7cec-803d-84bc-f9d5a6638dfa" class="" dir="auto">(1) उदाहरण 1 (सबसे प्रसिद्ध उदाहरण)</h4><blockquote id="3ee24f8d-7cec-80ec-8814-f1d66797cd2e" class="" dir="auto"><strong>&quot;रहिमन पानी राखिये, बिन पानी सब सून।पानी गये न ऊबरै, मोती, मानुष, चून॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-80e1-a2ce-eadb4581e4f2" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-80d8-8185-e3f9526cde61" class="" dir="auto">दोहे की दूसरी पंक्ति में <strong>&#x27;पानी&#x27;</strong> शब्द एक ही बार आया है, परंतु नीचे दी गई तीन चीज़ों के संदर्भ में इसके तीन अलग-अलग अर्थ चिपके हुए हैं:</p><ol type="1" id="3ee24f8d-7cec-80b6-a36c-e9ecd18b7060" class="numbered-list" start="1" dir="auto"><li><strong>मोती के पक्ष में ➔ कांति / चमक (Luster):</strong> चमक के बिना मोती की कोई कीमत नहीं रहती।</li></ol><ol type="1" id="3ee24f8d-7cec-80a0-9739-d47adab6af52" class="numbered-list" start="2" dir="auto"><li><strong>मानुष (मनुष्य) के पक्ष में ➔ आत्म-सम्मान / इज्जत (Self-Respect):</strong> इज्जत या प्रतिष्ठा चले जाने पर मनुष्य का जीवन व्यर्थ हो जाता है।</li></ol><ol type="1" id="3ee24f8d-7cec-80ca-a69f-e4a9344298a5" class="numbered-list" start="3" dir="auto"><li><strong>चून (आटा / चूना) के पक्ष में ➔ जल (Water):</strong> बिना जल के आटे को गूँथा नहीं जा सकता और न ही चूने का प्रयोग संभव है।</li></ol><hr id="3ee24f8d-7cec-80ff-9676-d31a5f92e4d1" dir="auto"/><h4 id="3ee24f8d-7cec-8096-ae8a-e6c4790224f9" class="" dir="auto">(2) उदाहरण 2</h4><blockquote id="3ee24f8d-7cec-8032-b79b-c265baf8fb42" class="" dir="auto"><strong>&quot;चरन धरत चिंता करत, चितवत चारों ओर।सुबरन को ढूँढ़त फिरत, कवि, व्यभिचारी, चोर॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-80e9-8757-d11fbf2f9f59" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-8061-a9fb-cb4917b1c81f" class="" dir="auto">यहाँ <strong>&#x27;सुबरन&#x27;</strong> शब्द एक बार प्रयुक्त हुआ है, लेकिन तीन अलग-अलग व्यक्तियों के संदर्भ में इसके तीन अर्थ हैं:</p><ol type="1" id="3ee24f8d-7cec-8033-a1c1-eb844049445b" class="numbered-list" start="1" dir="auto"><li><strong>कवि के संदर्भ में ➔ सु-वर्ण (सुंदर अक्षर / अच्छे शब्द):</strong> कवि हमेशा अपनी कविता के लिए सुंदर और सटीक शब्दों की तलाश में रहता है।</li></ol><ol type="1" id="3ee24f8d-7cec-80dc-bb62-ecf925f94860" class="numbered-list" start="2" dir="auto"><li><strong>व्यभिचारी के संदर्भ में ➔ सु-वर्ण (सुंदर रूप-रंग / सुंदर स्त्री):</strong> कामी या व्यभिचारी व्यक्ति हमेशा सुंदरता की खोज में रहता है।</li></ol><ol type="1" id="3ee24f8d-7cec-80cb-a554-dee812dbaf53" class="numbered-list" start="3" dir="auto"><li><strong>चोर के संदर्भ में ➔ सुवर्ण (सोना / स्वर्ण / धन):</strong> चोर हमेशा धन-दौलत और सोने की तलाश में रहता है।</li></ol><hr id="3ee24f8d-7cec-80a9-9d86-fa063b0248be" dir="auto"/><h4 id="3ee24f8d-7cec-8091-837b-e1f4809ea6a3" class="" dir="auto">(3) उदाहरण 3</h4><blockquote id="3ee24f8d-7cec-8016-81f0-fe63ff5426be" class="" dir="auto"><strong>&quot;जो रहीम गति दीप की, कुल कपूत गति सोय।बारे उजियारो करे, बड़े अँधेरो होय॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-80f8-9a22-c8a0cc0c0448" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-80d3-a381-daf5b8dd7b6d" class="" dir="auto">यहाँ दो शब्दों में श्लेष अलंकार है — <strong>&#x27;बारे&#x27;</strong> और <strong>&#x27;बड़े&#x27;</strong>:</p><ul id="3ee24f8d-7cec-8050-9220-cffb32db20c9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>&#x27;बारे&#x27; के दो अर्थ:</strong></li></ul><ol type="1" id="3ee24f8d-7cec-807e-923c-fe5c9510d93a" class="numbered-list" start="1" dir="auto"><li>दीपक के संदर्भ में = <em>जलाने पर</em> (Lighting the lamp).</li></ol><ol type="1" id="3ee24f8d-7cec-80e7-bb91-d43b6c254ac6" class="numbered-list" start="2" dir="auto"><li>पुत्र/कपूत के संदर्भ में = <em>बाल्यकाल/बचपन में</em> (In childhood).</li></ol><ul id="3ee24f8d-7cec-8069-b350-c64563820668" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>&#x27;बड़े&#x27; के दो अर्थ:</strong></li></ul><ol type="1" id="3ee24f8d-7cec-806a-98cc-f19539bfe3cb" class="numbered-list" start="1" dir="auto"><li>दीपक के संदर्भ में = <em>बुझ जाने पर</em> (Extinguishing).</li></ol><ol type="1" id="3ee24f8d-7cec-801b-9fbf-c87a83dad7a7" class="numbered-list" start="2" dir="auto"><li>पुत्र/कपूत के संदर्भ में = <em>बड़ा होने पर</em> (Growing up).</li></ol><hr id="3ee24f8d-7cec-807d-aae7-cdaa1b410803" dir="auto"/><figure id="3ee24f8d-7cec-80b9-92b1-c5d4f58e32ae" class="image" data-notion-image="image%202.png" dir="ltr"><a href="image%202.png"><img style="width:890.0377197265625px" src="image%202.png"/></a></figure><hr id="3ee24f8d-7cec-8033-8538-c6a75243ff59" dir="auto"/><h3 id="3ee24f8d-7cec-8016-afe4-d02c92c24595" class="" dir="auto">💡 Quick Recall Table (परीक्षा हेतु त्वरित रिवीजन)</h3><table id="3ee24f8d-7cec-8057-9dd3-ef5760016ae0" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-8039-80c3-ebc561a8550f" dir="ltr"><th id="c]ut" class="simple-table-header-color simple-table-header">अलंकार</th><th id="kdzH" class="simple-table-header-color simple-table-header">मूल लक्षण</th><th id="tbvj" class="simple-table-header-color simple-table-header">मुख्य भेद</th><th id="rm&lt;u" class="simple-table-header-color simple-table-header">प्रसिद्ध शब्द</th><th id="XPEr" class="simple-table-header-color simple-table-header">विभिन्न अर्थ</th></tr></thead><tbody><tr id="3ee24f8d-7cec-8039-bf22-dd12f558925d" dir="ltr"><td id="c]ut" class=""><strong>श्लेष</strong></td><td id="kdzH" class="">एक शब्द में multiple meanings चिपके होते हैं।</td><td id="tbvj" class=""><strong>अभंग</strong> (बिना तोड़े)&lt;br&gt;</td><td id="rm&lt;u" class=""></td><td id="XPEr" class=""></td></tr></tbody></table><hr id="3ee24f8d-7cec-8076-a01f-de3c5d774988" dir="auto"/><hr id="3ee24f8d-7cec-80ab-aa3c-dd73fb2afff4" dir="auto"/><h3 id="3ee24f8d-7cec-8030-a9a7-f5a3141686a9" class="" dir="auto">2.1.2 यमक अलंकार (Yamak Alankar / Repetition of Words with Different Meanings)</h3><h4 id="3ee24f8d-7cec-80b5-9a4e-c822395618cc" class="" dir="auto">1. लक्षण एवं अवधारणा (Concept &amp; Definition)</h4><p id="3ee24f8d-7cec-8021-bcad-ef92df7e633e" class="" dir="auto">&#x27;यमक&#x27; का शाब्दिक अर्थ होता है — <strong>&quot;युग्म&quot; या &quot;जोड़ा&quot; (Pair/Twin)।</strong></p><p id="3ee24f8d-7cec-806d-8ee8-f87bfba03333" class="" dir="auto">जब काव्य में <strong>एक ही शब्द की आवृत्ति (Repetition) दो या दो से अधिक बार</strong> हो, और <strong>हर बार उसका अर्थ अलग-अलग (भिन्न)</strong> हो, तो वहाँ <strong>&#x27;यमक अलंकार&#x27;</strong> होता है।</p><blockquote id="3ee24f8d-7cec-8095-ac53-e56c076ea04f" class="" dir="auto"><strong>लक्षण सूत्र:</strong> <em>&quot;सत्यर्थे पृथगर्थायाः स्वरव्यंजनसंहतेः। क्रमेण तेनैवावृत्तिर्यमकं निगद्यते॥&quot;</em><strong>सरल अर्थ:</strong> अर्थ होने पर भिन्न-भिन्न अर्थ वाले स्वर और व्यंजनों के समूह (शब्दों) की उसी क्रम में आवृत्ति को &#x27;यमक&#x27; कहते हैं।</blockquote><ul id="3ee24f8d-7cec-8001-a700-fc68459b33b5" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मुख्य पहचान:</strong></li></ul><ol type="1" id="3ee24f8d-7cec-80cc-b315-c44739230869" class="numbered-list" start="1" dir="auto"><li>शब्द की पुनरावृत्ति (कम से कम 2 बार आना आवश्यक)।</li></ol><ol type="1" id="3ee24f8d-7cec-8049-a664-dab3b2142072" class="numbered-list" start="2" dir="auto"><li>प्रत्येक बार अर्थ का पूर्णतः भिन्न होना।</li></ol><hr id="3ee24f8d-7cec-8089-b216-f611a505a4e7" dir="auto"/><h4 id="3ee24f8d-7cec-80ba-9f2f-cca7ac44abb2" class="" dir="auto">2. श्लेष और यमक में मुख्य अंतर (Difference between Shlesh &amp; Yamak)</h4><p id="3ee24f8d-7cec-8060-bf22-f21dae5bbbe6" class="" dir="auto">अक्सर परीक्षा में श्लेष और यमक के बीच का अंतर पूछा जाता है:</p><table id="3ee24f8d-7cec-8049-8bfa-e90ae58ec508" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-8076-a616-e9efc072fba3" dir="ltr"><th id="jcnN" class="simple-table-header-color simple-table-header">आधार (Basis)</th><th id="nfB`" class="simple-table-header-color simple-table-header">श्लेष अलंकार (Shlesh)</th><th id="xZe~" class="simple-table-header-color simple-table-header">यमक अलंकार (Yamak)</th></tr></thead><tbody><tr id="3ee24f8d-7cec-8022-8074-d4bf294af181" dir="ltr"><td id="jcnN" class=""><strong>शब्द की संख्या</strong></td><td id="nfB`" class="">शब्द केवल <strong>एक बार</strong> आता है।</td><td id="xZe~" class="">शब्द <strong>दो या अधिक बार</strong> दोहराया जाता है।</td></tr><tr id="3ee24f8d-7cec-8019-b6dd-c61ec3b871bf" dir="ltr"><td id="jcnN" class=""><strong>अर्थ की स्थिति</strong></td><td id="nfB`" class="">एक ही शब्द में अनेक अर्थ <strong>चिपके</strong> रहते हैं।</td><td id="xZe~" class="">हर बार शब्द का <strong>अलग-अलग अर्थ</strong> होता है।</td></tr><tr id="3ee24f8d-7cec-8068-a134-d5dae9eeaa8e" dir="ltr"><td id="jcnN" class=""><strong>मूल मंत्र</strong></td><td id="nfB`" class="">एक शब्द ➔ अनेक अर्थ</td><td id="xZe~" class="">एक से अधिक शब्द ➔ अलग-अलग अर्थ</td></tr></tbody></table><hr id="3ee24f8d-7cec-8035-8fad-fd81364749a1" dir="auto"/><h4 id="3ee24f8d-7cec-801e-a65c-e2217304d3d9" class="" dir="auto">3. यमक अलंकार के प्रकार (Types of Yamak Alankar)</h4><p id="3ee24f8d-7cec-80ab-b55c-cfc7ebd46df8" class="" dir="auto">यमक अलंकार मुख्य रूप से दो प्रकार का होता है:</p><pre id="3ee24f8d-7cec-8093-8e49-c34363d0142d" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │     यमक अलंकार के भेद (2 Types)        │
+                            └────────────────────┬────────────────────┘
+                                                 │
+            ┌────────────────────────────────────┴────────────────────────────────────┐
+            ▼                                                                         ▼
+   1. अभंग पद यमक (Abhang Yamak)                                              2. सभंग पद यमक (Sabhang Yamak)
+   शब्द को बिना तोड़े/खंडित किए                                              किसी शब्द को तोड़े/खंडित करके
+   उसका पुनरावृत्त रूप अलग अर्थ देता है।                                        दूसरा समान शब्द और अर्थ बनाया जाता है।</code></pre><h4 id="3ee24f8d-7cec-8044-85f6-f848cbc468d9" class="" dir="auto">(क) अभंग पद यमक (Abhang Yamak)</h4><p id="3ee24f8d-7cec-80c1-be1d-f9082481b585" class="" dir="auto">जहाँ शब्द को बिना तोड़े ही उसका दोहराया गया रूप अलग अर्थ देता है।</p><ul id="3ee24f8d-7cec-8081-858b-c2814193da5c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;कनक कनक ते सौ गुनी...&quot;</em> (यहाँ &#x27;कनक&#x27; को बिना तोड़े पहला = धतूरा, दूसरा = सोना)।</li></ul><h4 id="3ee24f8d-7cec-804a-9c01-eaf973a6cc60" class="" dir="auto">(ख) सभंग पद यमक (Sabhang Yamak)</h4><p id="3ee24f8d-7cec-80f0-90b5-fdf390951df6" class="" dir="auto">जहाँ कम से कम एक शब्द को तोड़कर (खंड करके) यमक की आवृत्ति बनाई जाती है।</p><ul id="3ee24f8d-7cec-80b3-a2fa-ef93deb82d44" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;कुमुदिनी मानसी मोदिनी।&quot;</em> (यहाँ &#x27;मानसी&#x27; और &#x27;मोदिनी&#x27; में &#x27;सि&#x27; और &#x27;दि&#x27; के साथ भंग करके तुक/समानता बनाई जाती है)।</li></ul><hr id="3ee24f8d-7cec-80c7-bd6d-c9244a092c7b" dir="auto"/><h4 id="3ee24f8d-7cec-805c-9827-ed9b3e577b89" class="" dir="auto">4. प्रमुख उदाहरण एवं विस्तृत स्पष्टीकरण (Key Examples with Analysis)</h4><h4 id="3ee24f8d-7cec-8022-a784-d10563830c99" class="" dir="auto">(1) उदाहरण 1 (सबसे प्रसिद्ध उदाहरण)</h4><blockquote id="3ee24f8d-7cec-800a-9d4f-ebc7bfc3ed17" class="" dir="auto"><strong>&quot;कनक कनक ते सौ गुनी, मादकता अधिकाय।वा खाए बौराय जग, या पाए बौराय॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-80d1-9cde-fefcc6b09a39" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-809a-afb8-d4c4f61f36d1" class="" dir="auto">यहाँ <strong>&#x27;कनक&#x27;</strong> शब्द की आवृत्ति लगातार दो बार हुई है, और दोनों बार इसका अर्थ बिलकुल अलग है:</p><ol type="1" id="3ee24f8d-7cec-8017-809d-e0226f5bfefa" class="numbered-list" start="1" dir="auto"><li><strong>प्रथम &#x27;कनक&#x27; का अर्थ ➔ धतूरा (Datura/Poisonous Fruit):</strong> जिसे केवल <em>खाने (खाए)</em> से ही मनुष्य बौरा (पागल) जाता है।</li></ol><ol type="1" id="3ee24f8d-7cec-80e0-a2fb-cdb3563fb7b5" class="numbered-list" start="2" dir="auto"><li><strong>द्वितीय &#x27;कनक&#x27; का अर्थ ➔ सोना / स्वर्ण (Gold/Wealth):</strong> जिसे केवल <em>पाने (पाए)</em> मात्र से ही मनुष्य धन के घमंड में बौरा (पागल) जाता है।</li></ol><hr id="3ee24f8d-7cec-80a8-9a5a-dd679340a6dc" dir="auto"/><h4 id="3ee24f8d-7cec-80c3-a4b6-c776b7881092" class="" dir="auto">(2) उदाहरण 2</h4><blockquote id="3ee24f8d-7cec-804e-a324-f75f1b49b9b4" class="" dir="auto"><strong>&quot;तीन बेर खाती थीं, वे तीन बेर खाती हैं।&quot;</strong></blockquote><p id="3ee24f8d-7cec-80ec-868d-fc98f7c86add" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-8082-ab0c-ebd34714bb6f" class="" dir="auto">कवि भूषण द्वारा रचित इस पंक्ति में <strong>&#x27;तीन बेर&#x27;</strong> पद की आवृत्ति दो बार हुई है:</p><ol type="1" id="3ee24f8d-7cec-800f-b55c-f762dc13d811" class="numbered-list" start="1" dir="auto"><li><strong>प्रथम &#x27;तीन बेर&#x27; का अर्थ ➔ समय / बार (Three times a day):</strong> रानी पद्मावती या मुगल रानियाँ दिन में तीन बार (सुबह, दोपहर, शाम) भोजन करती थीं।</li></ol><ol type="1" id="3ee24f8d-7cec-80b6-9860-ccd1f3328445" class="numbered-list" start="2" dir="auto"><li><strong>द्वितीय &#x27;तीन बेर&#x27; का अर्थ ➔ बेर का फल (Three Berries):</strong> अब विपत्ति के समय जंगलों में वे केवल तीन दाने &#x27;बेर&#x27; (झाड़ी का फल) खाकर दिन बिताती हैं।</li></ol><hr id="3ee24f8d-7cec-80e4-b70d-ec6b0c55fc07" dir="auto"/><h4 id="3ee24f8d-7cec-8054-bd16-dd3b8a6bd30d" class="" dir="auto">(3) उदाहरण 3</h4><blockquote id="3ee24f8d-7cec-8071-8e3b-c1ab5f305d96" class="" dir="auto"><strong>&quot;काली घटा का घमंड घटा, नभ मंडल तारक वृंद खिले।&quot;</strong></blockquote><p id="3ee24f8d-7cec-8059-bfd7-c895c9b6cb28" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-8020-832f-dca7c5c2bf4f" class="" dir="auto">यहाँ <strong>&#x27;घटा&#x27;</strong> शब्द दो बार प्रयुक्त हुआ है:</p><ol type="1" id="3ee24f8d-7cec-804a-9a10-df26c28bbd64" class="numbered-list" start="1" dir="auto"><li><strong>प्रथम &#x27;घटा&#x27; का अर्थ ➔ काले बादल (Dark Clouds):</strong> वर्षा ऋतु के उमड़ते हुए काले बादल।</li></ol><ol type="1" id="3ee24f8d-7cec-807b-b703-e03168f7f538" class="numbered-list" start="2" dir="auto"><li><strong>द्वितीय &#x27;घटा&#x27; का अर्थ ➔ कम होना / घट जाना (Decreased/Reduced):</strong> शरद ऋतु आने पर बादलों का अहंकार और उनका प्रभाव कम हो गया।</li></ol><hr id="3ee24f8d-7cec-80a7-ab1d-e2701d7d3a8f" dir="auto"/><h4 id="3ee24f8d-7cec-801b-bb6b-f6312e0c4253" class="" dir="auto">(4) उदाहरण 4</h4><blockquote id="3ee24f8d-7cec-803f-82fb-fa03501d0c39" class="" dir="auto"><strong>&quot;सरंग ले सारंग चल्यो, सारंग पूज्यो आय।सारंग में सारंग धरियो, सारंग सारंग माय॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-8061-aaef-cd3bb7919425" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-800c-80a5-fc30f05e226f" class="" dir="auto">यह यमक अलंकार का एक अद्भुत उदाहरण है जहाँ <strong>&#x27;सारंग&#x27;</strong> शब्द कई बार आया है और हर बार अर्थ अलग है (दीपक, स्त्री, कपड़ा, हवा आदि)।</p><hr id="3ee24f8d-7cec-80b8-9cbb-ea9d4e7300c6" dir="auto"/><figure id="3ee24f8d-7cec-8085-bdfe-d41dba8c1458" class="image" data-notion-image="image%203.png" dir="ltr"><a href="image%203.png"><img style="width:890.0377197265625px" src="image%203.png"/></a></figure><hr id="3ee24f8d-7cec-80e4-8a18-c20dea61baea" dir="auto"/><hr id="3ee24f8d-7cec-8038-b921-c9b339d18c6a" dir="auto"/><h3 id="3ee24f8d-7cec-806b-a72d-dfefcd47e833" class="" dir="auto">2.1.3 वक्रोक्ति अलंकार (Vakrokti Alankar / Oblique Expression)</h3><h4 id="3ee24f8d-7cec-805a-a2f2-dcfbde4850a2" class="" dir="auto">1. लक्षण एवं अवधारणा (Concept &amp; Definition)</h4><p id="3ee24f8d-7cec-80fc-a5fa-db1d4732c251" class="" dir="auto">&#x27;वक्रोक्ति&#x27; दो शब्दों के मेल से बना है — <strong>वक्र + उक्ति</strong>।</p><ul id="3ee24f8d-7cec-80aa-9acc-c47ec21d174c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>वक्र:</strong> टेढ़ा, घुमावदार, व्यंग्यात्मक या अनूठा।</li></ul><ul id="3ee24f8d-7cec-8091-94a6-fa1dc8101ace" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उक्ति:</strong> कथन, बात, या वाक्य।</li></ul><p id="3ee24f8d-7cec-80e0-8219-c91c85cce909" class="" dir="auto"><strong>सरल शब्दों में:</strong> जब वक्ता (बोलने वाला) किसी बात को किसी खास अभिप्राय (Meaning) से कहता है, लेकिन श्रोता (सुनने वाला) जानबूझकर या कंठ के लहजे (Tone) के कारण उसका <strong>दूसरा/टेढ़ा अर्थ</strong> निकाल लेता है, तो वहाँ <strong>&#x27;वक्रोक्ति अलंकार&#x27;</strong> होता है।</p><blockquote id="3ee24f8d-7cec-807c-bb5b-ea9e47b0ad77" class="" dir="auto"><strong>लक्षण सूत्र:</strong> <em>&quot;यदुक्यान्यथा वाक्यमन्यथा ह्युच्यते जनैः। श्लेषेण काक्वा वा ज्ञेया सा वक्रोक्तिस्तथा द्विधा॥&quot;</em><strong>सरल अर्थ:</strong> जब वक्ता द्वारा कहे गए वाक्य को सुनने वाला श्लेष या काकु (कंठ ध्वनि) के माध्यम से किसी दूसरे ही अर्थ में ग्रहण कर लेता है, तब वक्रोक्ति अलंकार होता है।</blockquote><hr id="3ee24f8d-7cec-8012-82bb-d06e0aee0671" dir="auto"/><h4 id="3ee24f8d-7cec-80f2-a235-c788923a745d" class="" dir="auto">2. वक्रोक्ति के 2 मुख्य भेद (2 Main Types of Vakrokti)</h4><p id="3ee24f8d-7cec-8001-b98e-e787e218c781" class="" dir="auto">वक्रोक्ति अलंकार को मुख्य रूप से दो भागों में बाँटा जाता है:</p><pre id="3ee24f8d-7cec-8051-9e6e-c065fdd673fd" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │    वक्रोक्ति अलंकार के भेद (2 Types)     │
+                            └────────────────────┬────────────────────┘
+                                                 │
+            ┌────────────────────────────────────┴────────────────────────────────────┐
+            ▼                                                                         ▼
+   1. श्लेष वक्रोक्ति (Shlesh Vakrokti)                                       2. काकु वक्रोक्ति (Kaku Vakrokti)
+   शब्द के श्लेष (अनेक अर्थ) का सहारा                                          कंठ के विशेष लहज़े (Intonation / Pitch)
+   लेकर दूसरा अर्थ निकाला जाता है।                                            के कारण अर्थ बदल जाता है।</code></pre><hr id="3ee24f8d-7cec-803e-b984-ec4741edfaa0" dir="auto"/><h4 id="3ee24f8d-7cec-8012-83f2-ff237cbde319" class="" dir="auto">3. उदाहरणों के साथ विस्तृत विश्लेषण (Detailed Analysis with Examples)</h4><h4 id="3ee24f8d-7cec-80e5-86fa-c58abce8fcad" class="" dir="auto">(क) श्लेष वक्रोक्ति (Shlesh-based Oblique Expression)</h4><p id="3ee24f8d-7cec-80f9-aaa6-c299abe32fcc" class="" dir="auto">जहाँ एक ही शब्द में छिपे <strong>कई अर्थों (श्लेष)</strong> का फायदा उठाकर श्रोता जानबूझकर वक्ता को कोई और अर्थ सुना देता है।</p><blockquote id="3ee24f8d-7cec-80e6-a320-f5f55bc8e110" class="" dir="auto"><strong>उदाहरण 1 (राधा और कृष्ण का प्रसिद्ध संवाद):राधा (अंदर से):</strong> <em>&quot;को तुम?&quot;</em> (कौन हो तुम?)<br/><strong>कृष्ण (बाहर से):</strong> <em>&quot;घनस्याम हम।&quot;</em> (मैं घनश्याम / कृष्ण हूँ।)<br/><strong>राधा (वक्रोक्ति करते हुए):</strong> <em>&quot;तो कितहू बरसो।&quot;</em> (यदि तुम घनश्याम यानी काले बादल हो, तो कहीं और जाकर बरसो!)</blockquote><p id="3ee24f8d-7cec-8076-91b6-e062563bc3c8" class="" dir="auto"><strong>स्पष्टीकरण:</strong></p><p id="3ee24f8d-7cec-808b-b1a4-f319bc5e24fc" class="" dir="auto">यहाँ &#x27;घनश्याम&#x27; शब्द के दो अर्थ हैं — 1. श्री कृष्ण 2. काले बादल। कृष्ण ने अपना नाम बताया, पर राधा जी ने &#x27;काले बादल&#x27; वाला अर्थ लेकर चुटकी ली और कहा कि &quot;यहाँ तुम्हारा क्या काम, कहीं और जाकर बरसो।&quot;</p><hr id="3ee24f8d-7cec-80cd-8557-ec52f52a5b2b" dir="auto"/><blockquote id="3ee24f8d-7cec-80ac-93ce-de77451cdaa0" class="" dir="auto"><strong>उदाहरण 2 (एक अन्य श्लेष वक्रोक्ति):वक्ता:</strong> <em>&quot;एक कबूतर देख हाथ में पूछा, कहाँ अपर है?&quot;</em><strong>श्रोता (नूरजहाँ):</strong> <em>&quot;अपर कैसा? वह उड़ गया सफर है!&quot;</em></blockquote><p id="3ee24f8d-7cec-8043-b0ad-ca29468c0cbc" class="" dir="auto"><strong>स्पष्टीकरण:</strong></p><ul id="3ee24f8d-7cec-808b-b6e1-c356f98c0347" class="bulleted-list" dir="auto"><li style="list-style-type:disc">जहांगीर ने पूछा कि दूसरा कबूतर कहाँ है? (यहाँ <strong>अपर</strong> = दूसरा / Secondary)।</li></ul><ul id="3ee24f8d-7cec-80f1-96c6-c32e4dc24af6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">नूरजहाँ ने &#x27;अपर&#x27; शब्द का दूसरा अर्थ निकाला (यहाँ <strong>अ-पर</strong> = बिना पर/पंख का / Without wings)। नूरजहाँ ने उत्तर दिया, &quot;वह बिना पंख का कहाँ है? उसके तो पंख हैं, इसलिए वह उड़ गया!&quot;</li></ul><hr id="3ee24f8d-7cec-8038-a518-d4ffc527c836" dir="auto"/><h4 id="3ee24f8d-7cec-801a-9105-e399157699e7" class="" dir="auto">(ख) काकु वक्रोक्ति (Tone-based Oblique Expression)</h4><p id="3ee24f8d-7cec-809f-8ce6-c45b35d4e12f" class="" dir="auto">जहाँ शब्द का अर्थ तो एक ही रहता है, लेकिन बोलने वाले के <strong>कंठ स्वर के बदलाव (Tone / Modulation)</strong> के कारण वाक्य का अर्थ बदल जाता है (प्रायः &#x27;हाँ&#x27; का अर्थ &#x27;ना&#x27; में बदल जाता है)।</p><blockquote id="3ee24f8d-7cec-8047-b2dc-f82c7c05ce69" class="" dir="auto"><strong>उदाहरण 3 (सीता-राम संवाद):</strong><em>&quot;मै सुकुमारि नाथ बन जोगू। तुमहिं उचित तप मोकहुँ भोगू॥&quot;</em></blockquote><p id="3ee24f8d-7cec-803a-b06f-d82593d7ee69" class="" dir="auto"><strong>स्पष्टीकरण:</strong></p><p id="3ee24f8d-7cec-8097-8a80-cec70e03368e" class="" dir="auto">यह तुलसीदास जी की रचना &#x27;रामचरितमानस&#x27; की पंक्ति है।</p><ul id="3ee24f8d-7cec-80a4-b46d-e4e192e614d3" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>शब्दों का सीधा अर्थ:</strong> &quot;मैं सुकुमारी (कोमल) हूँ और स्वामी वन के योग्य हैं। आपके लिए तपस्या उचित है और मेरे लिए सुख-भोग।&quot;</li></ul><ul id="3ee24f8d-7cec-8033-8206-c9a481c0a65c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>काकु (कंठ के लहजे) से निकला अर्थ:</strong> सीता जी व्यंग्य में अपने स्वर को बदलकर कहती हैं — <em>&quot;क्या मैं सुकुमारी हूँ और आप ही वन जाने के योग्य हैं? (अर्थात् नहीं! अगर आप वन जा सकते हैं, तो मैं भी आपके साथ जा सकती हूँ।)&quot;</em></li></ul><hr id="3ee24f8d-7cec-804f-b2b5-f94fd1b4c5b5" dir="auto"/><figure id="3ee24f8d-7cec-80a6-abb7-e807be02c4e4" class="image" data-notion-image="image%204.png" dir="ltr"><a href="image%204.png"><img style="width:890.0377197265625px" src="image%204.png"/></a></figure><hr id="3ee24f8d-7cec-801e-8977-c32c90a1616e" dir="auto"/><h3 id="3ee24f8d-7cec-800d-aa56-f0a3d3cd13d8" class="" dir="auto">💡 Quick Recall Table (परीक्षा हेतु त्वरित रिवीजन)</h3><table id="3ee24f8d-7cec-80ab-9945-d78322d775f0" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-8056-b0c3-ee3e66ccbf0d" dir="ltr"><th id="F`pC" class="simple-table-header-color simple-table-header">अलंकार</th><th id="p[gD" class="simple-table-header-color simple-table-header">मूल पहचान</th><th id="YChN" class="simple-table-header-color simple-table-header">भेद</th><th id="\cUd" class="simple-table-header-color simple-table-header">आधार</th><th id="FIsA" class="simple-table-header-color simple-table-header">प्रसिद्ध उदाहरण</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80e0-8951-e193958d6c50" dir="ltr"><td id="F`pC" class=""><strong>वक्रोक्ति</strong></td><td id="p[gD" class="">बात को घुमावदार/व्यंग्यात्मक ढंग से समझना।</td><td id="YChN" class=""><strong>श्लेष वक्रोक्ति</strong></td><td id="\cUd" class="">शब्द का दूसरा अर्थ लेना (Pun)</td><td id="FIsA" class="">घनस्याम हम ➔ तो कितहू बरसो</td></tr><tr id="3ee24f8d-7cec-8051-9eb1-e2e7bd7eb077" dir="ltr"><td id="F`pC" class=""></td><td id="p[gD" class=""></td><td id="YChN" class=""><strong>काकु वक्रोक्ति</strong></td><td id="\cUd" class="">कंठ की ध्वनि / टोन (Tone)</td><td id="FIsA" class="">मै सुकुमारि नाथ बन जोगू</td></tr></tbody></table><hr id="3ee24f8d-7cec-807b-9263-d428ccc4166e" dir="auto"/><hr id="3ee24f8d-7cec-8071-ad3b-d80f154a8a6e" dir="auto"/><h3 id="3ee24f8d-7cec-80a0-9f6b-ce94792c6c20" class="" dir="auto">2.1.4 उपमा अलंकार (Upma Alankar / Simile)</h3><h4 id="3ee24f8d-7cec-8047-846f-f91445f09220" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-80bf-8850-d2c24e504a13" class="" dir="auto">&#x27;उपमा&#x27; का सीधा सा मतलब होता है — <strong>तुलना करना (Comparison)</strong> या <strong>दो चीज़ों में बराबरी दिखाना</strong>।</p><p id="3ee24f8d-7cec-8002-baf8-da485f7fe0e9" class="" dir="auto">जब किसी <strong>साधारण चीज़</strong> (जिसकी बात हो रही है) की सुंदरता, गुण या रंग-रूप को समझाने के लिए उसकी तुलना किसी <strong>बहुत प्रसिद्ध या मशहूर चीज़</strong> से कर दी जाती है, तो वहाँ <strong>&#x27;उपमा अलंकार&#x27;</strong> होता है।</p><blockquote id="3ee24f8d-7cec-80a6-a51c-d8c12c592c75" class="" dir="auto"><strong>सरल सूत्र:A की तुलना B से करना = उपमा अलंकार</strong><br/>(जैसे: <em>उसका चेहरा चाँद जैसा सुंदर है।</em>)</blockquote><hr id="3ee24f8d-7cec-80b6-8e56-c172c3e87e60" dir="auto"/><h4 id="3ee24f8d-7cec-8096-8434-dc1c081ba46b" class="" dir="auto">2. उपमा के 4 मुख्य अंग (The 4 Elements of Simile)</h4><p id="3ee24f8d-7cec-8060-bf39-c232ac56dead" class="" dir="auto">उपमा अलंकार को समझने के लिए इसके 4 अंगों (Parts) को जानना सबसे ज़रूरी है:</p><table id="3ee24f8d-7cec-80cb-9b76-e0b6ccbaea0a" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80d5-9664-dd7d8fe85072" dir="ltr"><th id="TzNq" class="simple-table-header-color simple-table-header">क्र.सं.</th><th id="w?&lt;Y" class="simple-table-header-color simple-table-header">अंग (Element)</th><th id="=Deh" class="simple-table-header-color simple-table-header">आसान अर्थ (Easy Meaning)</th><th id="Tg}W" class="simple-table-header-color simple-table-header">उदाहरण से समझें (<em>&quot;मुख चाँद सा सुंदर है&quot;</em>)</th></tr></thead><tbody><tr id="3ee24f8d-7cec-8001-bca0-f348d29f6e0e" dir="ltr"><td id="TzNq" class=""><strong>1</strong></td><td id="w?&lt;Y" class=""><strong>उपमेय (Upmeya)</strong></td><td id="=Deh" class=""><strong>जिसकी</strong> तुलना की जा रही है।</td><td id="Tg}W" class=""><strong>मुख</strong> (चेहरा)</td></tr><tr id="3ee24f8d-7cec-8021-a486-c6172091f053" dir="ltr"><td id="TzNq" class=""><strong>2</strong></td><td id="w?&lt;Y" class=""><strong>उपमान (Upman)</strong></td><td id="=Deh" class=""><strong>जिस प्रसिद्ध चीज़ से</strong> तुलना की जा रही है।</td><td id="Tg}W" class=""><strong>चाँद</strong> (Moon)</td></tr><tr id="3ee24f8d-7cec-80ba-9c91-e95e5f6c5509" dir="ltr"><td id="TzNq" class=""><strong>3</strong></td><td id="w?&lt;Y" class=""><strong>वाचक शब्द (Vachak Shabd)</strong></td><td id="=Deh" class="">तुलना बताने वाला <strong>पहचान का शब्द</strong>।</td><td id="Tg}W" class=""><strong>सा</strong> (जैसे: सा, सी, से, सम, समान, जिमि)</td></tr><tr id="3ee24f8d-7cec-80d3-a233-ddf181bc9b86" dir="ltr"><td id="TzNq" class=""><strong>4</strong></td><td id="w?&lt;Y" class=""><strong>साधारण धर्म (Sadharan Dharm)</strong></td><td id="=Deh" class="">वह <strong>गुण (Quality)</strong> जो दोनों में एक जैसा है।</td><td id="Tg}W" class=""><strong>सुंदर</strong> (Beauty)</td></tr></tbody></table><hr id="3ee24f8d-7cec-8020-94c3-e83f977b8c5d" dir="auto"/><h4 id="3ee24f8d-7cec-8010-baa9-cc9cae9af95b" class="" dir="auto">3. उपमा अलंकार के 2 मुख्य भेद (2 Main Types)</h4><p id="3ee24f8d-7cec-80c7-9038-c7b0696d5f17" class="" dir="auto">उपमा अलंकार मुख्य रूप से दो प्रकार का होता है:</p><pre id="3ee24f8d-7cec-803b-a405-feef00e85ef1" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │      उपमा अलंकार के भेद (2 Types)        │
+                            └────────────────────┬────────────────────┘
+                                                 │
+            ┌────────────────────────────────────┴────────────────────────────────────┐
+            ▼                                                                         ▼
+   1. पूर्णोपमा (Purnopma)                                                   2. लुप्तोपमा (Luptopma)
+   जिसमें उपमा के चारों अंग (उपमेय, उपमान,                                  जिसमें उपमा का कोई 1 या 2 अंग
+   वाचक शब्द, साधारण धर्म) मौजूद हों।                                        गायब (लुप्त) हो।</code></pre><h4 id="3ee24f8d-7cec-80f4-b1ca-eb43561b5890" class="" dir="auto">(क) पूर्णोपमा (Purna + Upma)</h4><p id="3ee24f8d-7cec-8049-85a0-d96b65f7c2a4" class="" dir="auto">जहाँ उपमा के <strong>चारों के चारों अंग</strong> साफ़-साफ़ लिखे हों।</p><ul id="3ee24f8d-7cec-800a-8e61-fc70cc77ccc0" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;पीपर पात सरिस मन डोला।&quot;</em></li></ul><ul id="3ee24f8d-7cec-80e2-bef7-e18344068060" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमेय:</strong> मन</li></ul><ul id="3ee24f8d-7cec-80e2-93a5-f77f2e3e551f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमान:</strong> पीपर पात (पीपल का पत्ता)</li></ul><ul id="3ee24f8d-7cec-8057-8cc1-e54192751e0a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>वाचक शब्द:</strong> सरिस (जैसा)</li></ul><ul id="3ee24f8d-7cec-8039-8091-f218a8a290df" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>साधारण धर्म:</strong> डोला (चंचल होना/हिलना)<br/><em>(चारों अंग मौजूद हैं, इसलिए यह पूर्णोपमा है।)</em></li></ul><h4 id="3ee24f8d-7cec-806d-90cf-c83ce0289374" class="" dir="auto">(ख) लुप्तोपमा (Lupta + Upma)</h4><p id="3ee24f8d-7cec-801e-8bbf-c6d1f4613e7d" class="" dir="auto">जहाँ चारों अंगों में से <strong>कोई एक या दो अंग गायब (Hidden/Missing)</strong> हों, फिर भी तुलना समझ आ रही हो।</p><ul id="3ee24f8d-7cec-801d-a267-c18c610b41b7" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;मखमल के झूले पड़े, हाथी-सा टीला।&quot;</em></li></ul><ul id="3ee24f8d-7cec-8079-bd2b-e3058ff4fa0e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">यहाँ &#x27;टीला&#x27; (उपमेय), &#x27;हाथी&#x27; (उपमान), और &#x27;सा&#x27; (वाचक शब्द) तो है, लेकिन साधारण धर्म (विशाल होना/बड़ा होना) गायब है। इसलिए यह लुप्तोपमा है।</li></ul><hr id="3ee24f8d-7cec-8062-9eec-f9cc2796d290" dir="auto"/><h4 id="3ee24f8d-7cec-80dd-b6f3-db38438b8c6a" class="" dir="auto">4. प्रमुख उदाहरण एवं आसान स्पष्टीकरण (Key Examples with Analysis)</h4><h4 id="3ee24f8d-7cec-80f3-b729-d1ce1b3adc63" class="" dir="auto">(1) उदाहरण 1 (सबसे आसान और प्रसिद्ध उदाहरण)</h4><blockquote id="3ee24f8d-7cec-80ae-8ec5-dd7d31a99106" class="" dir="auto"><strong>&quot;हरिपद कोमल कमल से।&quot;</strong></blockquote><p id="3ee24f8d-7cec-80dc-bedd-d67740e18e2b" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-80a5-84c1-e18c1ffd5f7e" class="" dir="auto">कवि कह रहे हैं कि भगवान (हरि) के चरण (पैर) कमल के फूल जितने कोमल हैं।</p><ul id="3ee24f8d-7cec-8068-a5d3-d379bb124a52" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमेय:</strong> हरिपद (भगवान के पैर)</li></ul><ul id="3ee24f8d-7cec-8041-a444-d67de77c91e2" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमान:</strong> कमल (Lotus)</li></ul><ul id="3ee24f8d-7cec-80e2-8660-e525b81f6aa1" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>वाचक शब्द:</strong> से</li></ul><ul id="3ee24f8d-7cec-80b0-b038-f00d697d5c7b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>साधारण धर्म:</strong> कोमल (Softness)</li></ul><hr id="3ee24f8d-7cec-801f-936c-cac9e147f476" dir="auto"/><h4 id="3ee24f8d-7cec-807f-9550-d7ad3c1d6934" class="" dir="auto">(2) उदाहरण 2</h4><blockquote id="3ee24f8d-7cec-80c9-82f9-ced320e9f72b" class="" dir="auto"><strong>&quot;पीपर पात सरिस मन डोला।&quot;</strong></blockquote><p id="3ee24f8d-7cec-80c1-9226-c4e09c4f6b7c" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-80fb-bcbd-f664d564d944" class="" dir="auto">जैसे पीपल का पत्ता हवा में बिना रुके हमेशा हिलता रहता है, वैसे ही इंसान का मन भी चंचल रहता है और हमेशा भटकता/हिलता रहता है।</p><ul id="3ee24f8d-7cec-80c4-9a06-fd3f49e01431" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमेय:</strong> मन</li></ul><ul id="3ee24f8d-7cec-80b9-8226-d60c6f433e70" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमान:</strong> पीपल का पत्ता (पीपर पात)</li></ul><ul id="3ee24f8d-7cec-80e1-b151-cfb4296da4af" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>वाचक शब्द:</strong> सरिस (के समान)</li></ul><ul id="3ee24f8d-7cec-806d-8544-dcc57047d507" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>साधारण धर्म:</strong> डोला (हिलना/चंचल होना)</li></ul><hr id="3ee24f8d-7cec-80e9-bbf9-e247fefe7bb0" dir="auto"/><h4 id="3ee24f8d-7cec-800c-b139-dbdb1642698a" class="" dir="auto">(3) उदाहरण 3</h4><blockquote id="3ee24f8d-7cec-808d-a61e-c7f761dc3710" class="" dir="auto"><strong>&quot;हाय! फूल-सी कोमल बच्ची, हुई राख की थी ढेरी।&quot;</strong></blockquote><p id="3ee24f8d-7cec-8002-b5af-e205558f3423" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-80eb-9c9d-f8aff9b822fb" class="" dir="auto">यहाँ छोटी बच्ची की कोमलता की तुलना फूल से की गई है।</p><ul id="3ee24f8d-7cec-8055-8117-e56378242502" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमेय:</strong> बच्ची</li></ul><ul id="3ee24f8d-7cec-80e4-8745-d9b01ab85fb3" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमान:</strong> फूल</li></ul><ul id="3ee24f8d-7cec-8052-981c-f4218f51061c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>वाचक शब्द:</strong> सी</li></ul><ul id="3ee24f8d-7cec-80da-bcc5-e313d5f8068b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>साधारण धर्म:</strong> कोमल</li></ul><hr id="3ee24f8d-7cec-8056-b484-ef0c5e10731f" dir="auto"/><figure id="3ee24f8d-7cec-8061-936d-edf847d9cd7e" class="image" data-notion-image="image%205.png" dir="ltr"><a href="image%205.png"><img style="width:890.0377197265625px" src="image%205.png"/></a></figure><hr id="3ee24f8d-7cec-807e-a1c5-f197ef0468d2" dir="auto"/><hr id="3ee24f8d-7cec-80df-9cb2-c6678d2ce332" dir="auto"/><h3 id="3ee24f8d-7cec-8094-a94b-c62c78da9ef8" class="" dir="auto">2.1.5 रूपक अलंकार (Rupak Alankar / Metaphor)</h3><h4 id="3ee24f8d-7cec-80c9-9817-fd8b63f01d72" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-80ea-aa15-dc73d0d5975b" class="" dir="auto">&#x27;रूपक&#x27; का सीधा सा मतलब होता है — <strong>एक रूप कर देना (Identity / No Difference)</strong>।</p><p id="3ee24f8d-7cec-8092-a97a-ff3ac4e58a29" class="" dir="auto">उपमा अलंकार में हम कहते थे कि <em>&quot;A, B के जैसा है&quot;</em> (तुलना करते थे)। लेकिन <strong>रूपक अलंकार में हम तुलना नहीं करते, बल्कि A को सीधे B ही मान लेते हैं!</strong></p><p id="3ee24f8d-7cec-80d7-af7f-ea7e2611e49b" class="" dir="auto">यहाँ उपमेय (जिसकी बात हो रही है) और उपमान (जिस प्रसिद्ध चीज़ से तुलना की जानी थी) के बीच का <strong>अंतर पूरी तरह खत्म (अभेद)</strong> कर दिया जाता है।</p><blockquote id="3ee24f8d-7cec-806f-a83d-ec78106d95bd" class="" dir="auto"><strong>सरल सूत्र:A को सीधे B ही बता देना = रूपक अलंकार</strong><ul id="3ee24f8d-7cec-808a-85a8-fff98d446a8a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">उपमा: &quot;उसका चेहरा चाँद <strong>सा</strong> सुंदर है।&quot; (तुलना)</li></ul><ul id="3ee24f8d-7cec-8095-a643-cf8404f9cc50" class="bulleted-list" dir="auto"><li style="list-style-type:disc">रूपक: &quot;वह तो <strong>चाँद-मुखड़ी</strong> है।&quot; / &quot;मुख ही चाँद है।&quot; (कोई अंतर नहीं)</li></ul></blockquote><hr id="3ee24f8d-7cec-8017-a8a5-d0c998fe67f0" dir="auto"/><h4 id="3ee24f8d-7cec-808b-8c9c-d991f3fbddcd" class="" dir="auto">2. उपमा और रूपक में मुख्य अंतर (Difference between Upma &amp; Rupak)</h4><p id="3ee24f8d-7cec-8088-86b4-e5c8da9bca63" class="" dir="auto">यह अंतर परीक्षा के दृष्टिकोण से बहुत महत्वपूर्ण है:</p><table id="3ee24f8d-7cec-805b-9ff4-c12dee4ef5c8" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-807d-bdb8-e866815bdeb5" dir="ltr"><th id="{NWg" class="simple-table-header-color simple-table-header">आधार (Basis)</th><th id="&gt;:XJ" class="simple-table-header-color simple-table-header">उपमा अलंकार (Upma)</th><th id="r@xI" class="simple-table-header-color simple-table-header">रूपक अलंकार (Rupak)</th></tr></thead><tbody><tr id="3ee24f8d-7cec-802f-883d-f16eddb29285" dir="ltr"><td id="{NWg" class=""><strong>संबंध (Relation)</strong></td><td id="&gt;:XJ" class="">दो चीज़ों में <strong>तुलना</strong> होती है।</td><td id="r@xI" class="">दो चीज़ों को <strong>एक ही</strong> मान लिया जाता है।</td></tr><tr id="3ee24f8d-7cec-807d-8552-e72151a6508e" dir="ltr"><td id="{NWg" class=""><strong>वाचक शब्द (Vachak Words)</strong></td><td id="&gt;:XJ" class="">सा, सी, से, समान, सरिस <strong>आते हैं</strong>।</td><td id="r@xI" class="">सा, सी, से जैसे शब्द <strong>नहीं आते</strong> (हटा दिए जाते हैं)।</td></tr><tr id="3ee24f8d-7cec-80ef-b8d2-ff6711f9425f" dir="ltr"><td id="{NWg" class=""><strong>उदाहरण</strong></td><td id="&gt;:XJ" class=""><em>&quot;चरण कमल </em><em><strong>से</strong></em><em> कोमल हैं।&quot;</em></td><td id="r@xI" class=""><em>&quot;चरण-कमल बंदौ हरि राई।&quot;</em> (चरण ही कमल हैं)</td></tr></tbody></table><hr id="3ee24f8d-7cec-8045-959b-f05bdaf378b8" dir="auto"/><h4 id="3ee24f8d-7cec-80da-b569-c02233c6dd0a" class="" dir="auto">3. रूपक अलंकार के 3 मुख्य भेद (3 Main Types)</h4><p id="3ee24f8d-7cec-8032-913c-d2f54d5bddb5" class="" dir="auto">रूपक अलंकार के तीन मुख्य भेद होते हैं:</p><pre id="3ee24f8d-7cec-80f5-af7f-cc56a6f3cdde" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │      रूपक अलंकार के भेद (3 Types)        │
+                            └────────────────────┬────────────────────┘
+                                                 │
+   ┌─────────────────────────────────────────────┼─────────────────────────────────────────────┐
+   ▼                                             ▼                                             ▼
+1. साँग रूपक (Sang Rupak)                     2. निरँग रूपक (Nirang Rupak)                 3. परंपरित रूपक (Paramparit Rupak)
+उपमेय पर उपमान के सभी अंगों का               बिना अंगों के, केवल मुख्य रूपक               एक रूपक के आधार पर दूसरा रूपक
+आरोप किया जाता है (Full Metaphor)।            का आरोप (Simple Metaphor)।                    तैयार होना (Linked Metaphor)।</code></pre><h4 id="3ee24f8d-7cec-80db-a456-c21249367036" class="" dir="auto">(क) साँग रूपक (Sang Rupak = स + अंग)</h4><p id="3ee24f8d-7cec-806b-807b-fd9b3cece01f" class="" dir="auto">जहाँ उपमेय पर उपमान का आरोप उसके <strong>सभी अंगों (Parts) के साथ</strong> किया जाए।</p><ul id="3ee24f8d-7cec-80e3-81bd-eb39c47fb117" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;उदित उदयगिरि मंच पर, रघुवर बाल पतंग। बिकसे संत सरोज सब, हरषे लोचन भृंग॥&quot;(यहाँ मंच को उदयगिरि पर्वत, राम को सूर्य, संतों को कमल और आँखों को भौंरा मानकर पूरे दृश्य का अंग-प्रत्यंग रूपक बाँधा गया है।)</em></li></ul><h4 id="3ee24f8d-7cec-8036-aaeb-fcc6b4f6f7e8" class="" dir="auto">(ख) निरँग रूपक (Nirang Rupak = निस् + अंग)</h4><p id="3ee24f8d-7cec-8099-8bde-f24b1a73662c" class="" dir="auto">जहाँ बिना अंगों के, केवल <strong>एक मुख्य वस्तु पर दूसरी वस्तु का सीधा आरोप</strong> कर दिया जाए।</p><ul id="3ee24f8d-7cec-8043-9a2f-e138f90d23e0" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;चरण-कमल बंदौ हरि राई।&quot;</em> (केवल &#x27;चरण&#x27; को &#x27;कमल&#x27; माना गया है, किसी अन्य अंग की बात नहीं हुई)।</li></ul><h4 id="3ee24f8d-7cec-801c-ae7d-d82c8d7de762" class="" dir="auto">(ग) परंपरित रूपक (Paramparit Rupak)</h4><p id="3ee24f8d-7cec-80b1-95fc-cbacf3af5e14" class="" dir="auto">जहाँ एक रूपक का होना <strong>दूसरे रूपक के कारण</strong> पर निर्भर करता है (कारण-कार्य संबंध)।</p><ul id="3ee24f8d-7cec-8086-9ffb-e865ab7b592d" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;जय जय गिरिवर-राज किशोरी। जय महेश-मुख-चंद्र-चकोरी॥&quot;</em></li></ul><hr id="3ee24f8d-7cec-80d5-b6d8-f6f9b3963c38" dir="auto"/><h4 id="3ee24f8d-7cec-80cd-9b14-dda4b89c732b" class="" dir="auto">4. प्रमुख उदाहरण एवं आसान स्पष्टीकरण (Key Examples with Analysis)</h4><h4 id="3ee24f8d-7cec-8085-b065-c40a385e28ea" class="" dir="auto">(1) उदाहरण 1 (सबसे प्रसिद्ध उदाहरण)</h4><blockquote id="3ee24f8d-7cec-8025-b4fa-f565331cb8e7" class="" dir="auto"><strong>&quot;चरण-कमल बंदौ हरि राई।&quot;</strong></blockquote><p id="3ee24f8d-7cec-806e-80d0-f33b7ea0063c" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-805c-8e21-d9bdf0153ea3" class="" dir="auto">यहाँ भक्त सूरदास जी कह रहे हैं कि मैं भगवान के &#x27;चरण रूपी कमल&#x27; की वंदना करता हूँ।</p><ul id="3ee24f8d-7cec-80d2-9221-dd32a4eeb946" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमेय:</strong> चरण (पैर)</li></ul><ul id="3ee24f8d-7cec-80d4-8293-c379e49f11cc" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमान:</strong> कमल (Lotus)</li></ul><ul id="3ee24f8d-7cec-8007-afdb-c903978a5c45" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>अभिप्राय:</strong> यहाँ पैरों को &#x27;कमल के समान&#x27; नहीं कहा गया, बल्कि पैरों को <strong>सीधे &#x27;कमल&#x27; ही मान लिया गया है</strong>। बीच में &#x27;सा/सी/से&#x27; शब्द गायब है।</li></ul><hr id="3ee24f8d-7cec-80c7-be37-e370dc158084" dir="auto"/><h4 id="3ee24f8d-7cec-80f7-a3a2-cbb6f5d8307e" class="" dir="auto">(2) उदाहरण 2</h4><blockquote id="3ee24f8d-7cec-80e7-8442-e0ecf6e66466" class="" dir="auto"><strong>&quot;मैया मैं तो चंद्र-खिलौना लैहों।&quot;</strong></blockquote><p id="3ee24f8d-7cec-800a-99d9-c94b70e8945b" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-801f-a856-c78d176a5ce1" class="" dir="auto">बाल कृष्ण अपनी माता यशोदा से जिद कर रहे हैं।</p><ul id="3ee24f8d-7cec-8026-8cf5-cf69edb0c477" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमेय:</strong> चंद्रमा (Moon)</li></ul><ul id="3ee24f8d-7cec-8030-967e-fb2552c36dc0" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमान:</strong> खिलौना (Toy)</li></ul><ul id="3ee24f8d-7cec-8019-9168-c3f2f211d54b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>अभिप्राय:</strong> कृष्ण यह नहीं कह रहे कि मुझे &#x27;चाँद जैसा खिलौना&#x27; चाहिए, वे कह रहे हैं कि मुझे <strong>&#x27;चाँद रूपी खिलौना&#x27; (चाँद ही खिलौना)</strong> चाहिए।</li></ul><hr id="3ee24f8d-7cec-80ae-91a4-f0fcd0346fcd" dir="auto"/><h4 id="3ee24f8d-7cec-80a9-b5fc-d12aebba8fdb" class="" dir="auto">(3) उदाहरण 3</h4><blockquote id="3ee24f8d-7cec-802f-960f-c82c4aa2610a" class="" dir="auto"><strong>&quot;विषय वारुणी धूरि छिन, पकत न कछू सँभार।राम नाम मनदीप बिनु, कसमसात संसार॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-807e-9df1-d1fda2f6b5b9" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-8090-ab7f-c3d578f6f0f3" class="" dir="auto">यहाँ &#x27;राम नाम&#x27; को सीधे <strong>&#x27;मन का दीपक&#x27; (मनदीप)</strong> मान लिया गया है।</p><hr id="3ee24f8d-7cec-8017-a564-efd080a51b03" dir="auto"/><figure id="3ee24f8d-7cec-804e-92f4-e703a88720d5" class="image" data-notion-image="image%206.png" dir="ltr"><a href="image%206.png"><img style="width:890.0377197265625px" src="image%206.png"/></a></figure><hr id="3ee24f8d-7cec-80d3-892e-da9a3fd36d12" dir="auto"/><h3 id="3ee24f8d-7cec-8092-be09-d16c9b4c907d" class="" dir="auto">💡 Quick Recall Table (परीक्षा के लिए झटपट रिवीजन)</h3><table id="3ee24f8d-7cec-80c0-900b-e0e4e09b093c" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80e5-bef0-de62d8ecc69e" dir="ltr"><th id="dY\V" class="simple-table-header-color simple-table-header">अलंकार</th><th id=";zE_" class="simple-table-header-color simple-table-header">सबसे आसान पहचान</th><th id="YyRR" class="simple-table-header-color simple-table-header">पहचान का तरीका</th><th id="y&gt;Xv" class="simple-table-header-color simple-table-header">प्रसिद्ध उदाहरण</th><th id="?UH;" class="simple-table-header-color simple-table-header">आसान अर्थ</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80dd-97f7-c093e12fa0ae" dir="ltr"><td id="dY\V" class=""><strong>रूपक</strong></td><td id=";zE_" class="">दो चीज़ों को एक ही मान लेना (अभेद)।</td><td id="YyRR" class="">बीच में <strong>सा/सी/से नहीं होता</strong> (प्रायः योजक चिह्न &#x27;-&#x27; होता है)।</td><td id="y&gt;Xv" class=""><em>चरण-कमल बंदौ हरि राई</em></td><td id="?UH;" class="">चरण ही कमल हैं।</td></tr><tr id="3ee24f8d-7cec-8044-9367-cd05f3143e8d" dir="ltr"><td id="dY\V" class=""></td><td id=";zE_" class=""></td><td id="YyRR" class=""></td><td id="y&gt;Xv" class=""><em>मैया मैं तो चंद्र-खिलौना लैहों</em></td><td id="?UH;" class="">चाँद ही खिलौना है।</td></tr></tbody></table><hr id="3ee24f8d-7cec-8071-80bc-f72444a28c63" dir="auto"/><hr id="3ee24f8d-7cec-8050-b79f-c4b981692af5" dir="auto"/><h3 id="3ee24f8d-7cec-80c9-a7a3-f0ebad337d55" class="" dir="auto">2.1.6 उत्प्रेक्षा अलंकार (Utpreksha Alankar / Poetic Fancy)</h3><h4 id="3ee24f8d-7cec-80de-9e5b-f1b4d54aca02" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-80aa-8914-c594b3a308c2" class="" dir="auto">&#x27;उत्प्रेक्षा&#x27; का शाब्दिक अर्थ होता है — <strong>संभावना प्रकट करना (Imagination / Possibility)</strong> या <strong>मान लेना</strong>।</p><p id="3ee24f8d-7cec-80db-b2f9-e4d6e0e1bc94" class="" dir="auto">जब किसी साधारण चीज़ (उपमेय) को देखकर ऐसा लगे कि वह कोई दूसरी प्रसिद्ध चीज़ (उपमान) ही है, और कवि अपनी कल्पना से <strong>यह मान लेने की संभावना (Poetic Fancy/Presumption)</strong> जताता है, तो वहाँ <strong>&#x27;उत्प्रेक्षा अलंकार&#x27;</strong> होता है।</p><blockquote id="3ee24f8d-7cec-807d-a805-dbc72bc538d7" class="" dir="auto"><strong>तीनों का अंतर एक नज़र में:</strong><ul id="3ee24f8d-7cec-8070-9670-f24710b17872" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमा (Comparison):</strong> A की तुलना B से करना (<em>&quot;मुख चाँद </em><em><strong>सा</strong></em><em> सुंदर है।&quot;</em>)</li></ul><ul id="3ee24f8d-7cec-8035-b966-c7ad5cb5b655" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>रूपक (Identity):</strong> A को सीधे B ही बता देना (<em>&quot;मुख </em><em><strong>चाँद</strong></em><em> ही है।&quot;</em>)</li></ul><ul id="3ee24f8d-7cec-80f0-aae3-fbb19afa29d8" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उत्प्रेक्षा (Imagination):</strong> A में B होने की संभावना/कल्पना करना (<em>&quot;मुख </em><em><strong>मानो चाँद</strong></em><em> है!&quot;</em>)</li></ul></blockquote><hr id="3ee24f8d-7cec-809d-b4e5-f6cea7f26dd1" dir="auto"/><h4 id="3ee24f8d-7cec-80d4-b7ec-e12cbb223351" class="" dir="auto">2. सबसे पक्की पहचान (Magical Keywords to Spot Utpreksha)</h4><p id="3ee24f8d-7cec-809a-ac3e-d1e61b1c0b50" class="" dir="auto">उत्प्रेक्षा अलंकार को पहचानना सबसे आसान है! काव्य की पंक्तियों में अगर आपको नीचे दिए गए <strong>वाचक शब्द (Keywords)</strong> दिख जाएँ, तो वहाँ 100% उत्प्रेक्षा अलंकार होता है:</p><blockquote id="3ee24f8d-7cec-80c4-be84-caa06222642e" class="" dir="auto"><strong>पहचान के शब्द:मानो, मनु, मनहुँ, मानो जनु, जानो, जनहुँ, ज्यों, इव</strong></blockquote><hr id="3ee24f8d-7cec-80c7-80b0-efcea63e13b6" dir="auto"/><h4 id="3ee24f8d-7cec-8052-8a80-e2cfffa4bc47" class="" dir="auto">3. उत्प्रेक्षा अलंकार के 3 मुख्य भेद (3 Main Types)</h4><p id="3ee24f8d-7cec-802e-b1d0-ed26eea18c4e" class="" dir="auto">उत्प्रेक्षा अलंकार को तीन भागों में बाँटा जाता है:</p><pre id="3ee24f8d-7cec-800e-a4da-fd0007cfcf0a" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │    उत्प्रेक्षा अलंकार के भेद (3 Types)   │
+                            └────────────────────┬────────────────────┘
+                                                 │
+   ┌─────────────────────────────────────────────┼─────────────────────────────────────────────┐
+   ▼                                             ▼                                             ▼
+1. वस्तुत्प्रेक्षा (Vastutpreksha)             2. हेतुत्प्रेक्षा (Hetutpreksha)             3. फलोत्प्रेक्षा (Phalotpreksha)
+एक वस्तु में दूसरी वस्तु की                    जो वास्तविक कारण (हेतु) नहीं है,             जो वास्तविक फल (Result) नहीं है,
+संभावना (Object in Object)।                    उसे कारण मान लेना।                             उसे फल मान लेना।</code></pre><h4 id="3ee24f8d-7cec-809c-b5ad-febcb8d5694a" class="" dir="auto">(क) वस्तुत्प्रेक्षा (Vastutpreksha)</h4><p id="3ee24f8d-7cec-8010-8bce-ef5c435e41a0" class="" dir="auto">जहाँ एक वस्तु में दूसरी वस्तु की संभावना/कल्पना की जाए।</p><ul id="3ee24f8d-7cec-8057-a0ff-c31173f06ae0" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;सोहत ओढ़े पीत पट, श्याम सलोने गात। मनो नीलमणि सैल पर, आपत पर्यो प्रभात॥&quot;(यहाँ कृष्ण के सांवले शरीर और पीले वस्त्र में नीलमणि पर्वत पर सुबह की धूप की संभावना की गई है।)</em></li></ul><h4 id="3ee24f8d-7cec-8033-a238-c837ea865d36" class="" dir="auto">(ख) हेतुत्प्रेक्षा (Hetutpreksha = हेतु + उत्प्रेक्षा)</h4><p id="3ee24f8d-7cec-807c-b5e7-dd7b679245b5" class="" dir="auto">जहाँ जो अहेतु (जो असली कारण नहीं है) है, उसे कवि अपनी कल्पना से कारण (हेतु) मान लेता है।</p><ul id="3ee24f8d-7cec-80cf-8a08-da724ddc0ac4" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;अरुण पात समझि मातु पद, नख छबि के मिस धाय।&quot;(पैरों के लाल होने का असली कारण स्वाभाविक रंग है, पर कवि ने कल्पना की कि वे नखों की चमक से जलकर लाल हो गए हैं।)</em></li></ul><h4 id="3ee24f8d-7cec-80ee-9d8a-f1c436d57c4f" class="" dir="auto">(ग) फलोत्प्रेक्षा (Phalotpreksha = फल + उत्प्रेक्षा)</h4><p id="3ee24f8d-7cec-8096-89f2-f2bc8a4fdd71" class="" dir="auto">जहाँ जो असली फल (परिणाम/उद्देश्य) नहीं है, उसे कवि अपना मुख्य फल मान लेता है।</p><ul id="3ee24f8d-7cec-80f7-9a83-ce2e6511948d" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;बढ़त ताड़ को रूख यह, चुमन को आकाश।&quot;(ताड़ का पेड़ अपनी प्राकृतिक वृद्धि से बढ़ रहा है, पर कवि कल्पना करता है कि वह तो आकाश को चूमने के फल/उद्देश्य से बढ़ रहा है।)</em></li></ul><hr id="3ee24f8d-7cec-8090-a92a-ecb5450b385a" dir="auto"/><h4 id="3ee24f8d-7cec-8053-a6a6-f7e7709344ad" class="" dir="auto">4. प्रमुख उदाहरण एवं आसान स्पष्टीकरण (Key Examples with Analysis)</h4><h4 id="3ee24f8d-7cec-802b-a0bb-ff12cce0cb82" class="" dir="auto">(1) उदाहरण 1 (सबसे प्रसिद्ध उदाहरण)</h4><blockquote id="3ee24f8d-7cec-808b-8ef8-cb354b18cd59" class="" dir="auto"><strong>&quot;सोहत ओढ़े पीत पट, श्याम सलोने गात।मनौ नीलमणि सैल पर, आतप पर्यो प्रभात॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-800b-926f-c2d9564b3bfb" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-8063-a11b-d27780b22965" class="" dir="auto">कवि बिहारी कहते हैं कि श्री कृष्ण के सांवले शरीर पर पीला वस्त्र ऐसा सुंदर लग रहा है, <strong>मानो (मनौ)</strong> नीलमणि पर्वत पर सुबह-सुबह सूर्य की धूप पड़ रही हो।</p><ul id="3ee24f8d-7cec-8073-a532-e0ead59a2948" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमेय:</strong> कृष्ण का सांवला शरीर + पीला कपड़ा।</li></ul><ul id="3ee24f8d-7cec-807b-a288-fa9e7dc25fd3" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमान:</strong> नीलमणि पर्वत + सुबह की धूप।</li></ul><ul id="3ee24f8d-7cec-8007-a431-f0368463ecee" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>वाचक शब्द:</strong> <strong>मनौ</strong> (इसी शब्द से पहचान हो गई कि यहाँ कल्पना की जा रही है)।</li></ul><hr id="3ee24f8d-7cec-8081-af2d-dc522ccd3a12" dir="auto"/><h4 id="3ee24f8d-7cec-80f6-9e13-dd2b8fded115" class="" dir="auto">(2) उदाहरण 2</h4><blockquote id="3ee24f8d-7cec-809b-8e91-f234dd71a741" class="" dir="auto"><strong>&quot;मानो माई घनघन अंतर दामिनी।घन दामिनी दामिनी घन अंतर, बिसरति हरि-भामिनी॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-80ce-9548-ef12d2fac797" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-804f-a49e-e62cd49a99e5" class="" dir="auto">रासलीला का वर्णन करते हुए कवि कहते हैं कि गोपियाँ और कृष्ण जब एक साथ नाच रहे हैं, तो ऐसा लग रहा है <strong>मानो</strong> बादलों के बीच बिजली और बिजली के बीच बादल चमक रहे हों।</p><ul id="3ee24f8d-7cec-8083-8400-d129269b6d86" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>वाचक शब्द:</strong> <strong>मानो</strong></li></ul><hr id="3ee24f8d-7cec-8034-b0f5-d5e1b77a20f3" dir="auto"/><h4 id="3ee24f8d-7cec-8072-89d2-c499b23ccc11" class="" dir="auto">(3) उदाहरण 3</h4><blockquote id="3ee24f8d-7cec-8052-bd79-dcb2f023aa21" class="" dir="auto"><strong>&quot;उस काल मारे क्रोध के तन काँपने उनका लगा।मानो हवा के वेग से सोता हुआ सागर जगा॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-8062-8af2-f289fe142566" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-80d4-b893-da85444de0e6" class="" dir="auto">महाभारत के युद्ध में अर्जुन के क्रोध का वर्णन है। अर्जुन का शरीर गुस्से से इस तरह काँपने लगा, <strong>मानो</strong> तेज़ हवा चलने से शांत/सोया हुआ समुद्र अचानक उमड़ पड़ा हो।</p><ul id="3ee24f8d-7cec-80e5-8565-d72d41919e9f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमेय:</strong> अर्जुन का क्रोध से काँपता शरीर।</li></ul><ul id="3ee24f8d-7cec-8063-9463-f855100e5778" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उपमान:</strong> हवा से उमड़ता हुआ सागर।</li></ul><ul id="3ee24f8d-7cec-8044-ab80-f16e14f8f50c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>वाचक शब्द:</strong> <strong>मानो</strong></li></ul><hr id="3ee24f8d-7cec-80e0-a5a0-dca874580e83" dir="auto"/><figure id="3ee24f8d-7cec-8078-bf21-cd1ab307a724" class="image" data-notion-image="image%207.png" dir="ltr"><a href="image%207.png"><img style="width:890.0377197265625px" src="image%207.png"/></a></figure><hr id="3ee24f8d-7cec-8046-b8b4-daab0c4dd9ef" dir="auto"/><h3 id="3ee24f8d-7cec-8021-b49d-e096129b1400" class="" dir="auto">💡 Quick Recall Table (परीक्षा के लिए झटपट रिवीजन)</h3><table id="3ee24f8d-7cec-80b7-8b83-f78f3c7b0f46" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80fb-98cc-e93986cdb1b9" dir="ltr"><th id="PelG" class="simple-table-header-color simple-table-header">अलंकार</th><th id="`~\@" class="simple-table-header-color simple-table-header">सबसे आसान पहचान</th><th id="cBZq" class="simple-table-header-color simple-table-header">पहचान के मुख्य शब्द (Magic Words)</th><th id="M\n_" class="simple-table-header-color simple-table-header">प्रसिद्ध उदाहरण</th><th id="YKZr" class="simple-table-header-color simple-table-header">आसान अर्थ</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80d9-8502-f0ea396741e8" dir="ltr"><td id="PelG" class=""><strong>उत्प्रेक्षा</strong></td><td id="`~\@" class="">उपमेय में उपमान की <strong>संभावना / कल्पना</strong> करना।</td><td id="cBZq" class=""><strong>मानो, मनु, मनहुँ, जानो, जनु, जनहुँ, ज्यों</strong></td><td id="M\n_" class=""><em>सोहत ओढ़े पीत पट... </em><em><strong>मनौ</strong></em><em> नीलमणि सैल पर...</em></td><td id="YKZr" class="">कृष्ण के पीले कपड़ों में नीलमणि पर्वत की धूप की संभावना।</td></tr><tr id="3ee24f8d-7cec-8066-a5cb-c1c75d8456f5" dir="ltr"><td id="PelG" class=""></td><td id="`~\@" class=""></td><td id="cBZq" class=""></td><td id="M\n_" class=""><em>उस काल मारे क्रोध के... </em><em><strong>मानो</strong></em><em> हवा के वेग से...</em></td><td id="YKZr" class="">अर्जुन के काँपते शरीर में सागर उमड़ने की कल्पना।</td></tr></tbody></table><hr id="3ee24f8d-7cec-8029-bed3-f8f889506d37" dir="auto"/><hr id="3ee24f8d-7cec-806b-9f90-e51e5d6a041b" dir="auto"/><h3 id="3ee24f8d-7cec-80a5-b3a0-c030674366cd" class="" dir="auto">2.1.7 अतिशयोक्ति अलंकार (Atishayokti Alankar / Hyperbole)</h3><h4 id="3ee24f8d-7cec-8075-bb0e-e5a02786fb6c" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-8036-83b4-cf42b2245553" class="" dir="auto">&#x27;अतिशयोक्ति&#x27; दो शब्दों से मिलकर बना है — <strong>अतिशय + उक्ति</strong>।</p><ul id="3ee24f8d-7cec-8012-bf43-e4e8eba88091" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>अतिशय:</strong> बहुत ज़्यादा, लोक-सीमा से बाहर, या बढ़ा-चढ़ाकर।</li></ul><ul id="3ee24f8d-7cec-805e-98e9-f262ba02f105" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उक्ति:</strong> कथन, बात, या कहना।</li></ul><p id="3ee24f8d-7cec-8012-9c42-c30b42d937c7" class="" dir="auto"><strong>सरल शब्दों में:</strong> जब किसी बात, व्यक्ति, वस्तु या स्थिति का वर्णन इतना <strong>बढ़ा-चढ़ाकर (Exaggerated)</strong> किया जाए कि लोक-सीमा (सामान्य दुनिया की संभावना) ही पार हो जाए, तो वहाँ <strong>&#x27;अतिशयोक्ति अलंकार&#x27;</strong> होता है।</p><blockquote id="3ee24f8d-7cec-80fd-8ad5-f6b8c573bd02" class="" dir="auto"><strong>सरल सूत्र:बात को ज़रूरत से ज़्यादा बढ़ा-चढ़ाकर बोलना = अतिशयोक्ति अलंकार</strong><br/>(जैसे: <em>&quot;वह इतना रोया कि नदियाँ बह गईं!&quot;</em>)</blockquote><hr id="3ee24f8d-7cec-803b-a9ec-cf1f3be8ff04" dir="auto"/><h4 id="3ee24f8d-7cec-8024-badf-eaaaa4230911" class="" dir="auto">2. अतिशयोक्ति अलंकार की मुख्य विशेषताएँ (Key Features)</h4><ol type="1" id="3ee24f8d-7cec-8099-bef6-f1c4b841d8ec" class="numbered-list" start="1" dir="auto"><li><strong>लोक-सीमा का उल्लंघन:</strong> इसमें कही गई बात वास्तविक जीवन (Real Life) में संभव नहीं लगती।</li></ol><ol type="1" id="3ee24f8d-7cec-80f5-9a42-e37c27b7b76b" class="numbered-list" start="2" dir="auto"><li><strong>काव्य में चमत्कार:</strong> कवि किसी भावना, वीरता, सुंदरता या दुख की तीव्रता को उभारने के लिए इसका प्रयोग करता है।</li></ol><ol type="1" id="3ee24f8d-7cec-8049-b5d2-f1ada390b312" class="numbered-list" start="3" dir="auto"><li><strong>कारण और कार्य का अनूठा क्रम:</strong> कभी-कभी कारण पूरा होने से पहले ही कार्य संपन्न हो जाता है।</li></ol><hr id="3ee24f8d-7cec-803a-bfa2-d0dfdaf86728" dir="auto"/><h4 id="3ee24f8d-7cec-807e-afe4-c6167fe3a510" class="" dir="auto">3. अतिशयोक्ति अलंकार के 4 मुख्य भेद (4 Main Types)</h4><p id="3ee24f8d-7cec-8023-8b45-cb920cbed0cb" class="" dir="auto">अतिशयोक्ति अलंकार को मुख्य रूप से 4 भागों में बाँटा जाता है:</p><pre id="3ee24f8d-7cec-8087-92b4-d24b287bbae2" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │     अतिशयोक्ति के भेद (4 Types)          │
+                            └────────────────────┬────────────────────┘
+                                                 │
+   ┌──────────────────────┬──────────────────────┴──────────────────────┬──────────────────────┐
+   ▼                      ▼                                             ▼                      ▼
+1. रूपकातिशयोक्ति      2. भेदातिशयोक्ति                              3. सम्बंधातिशयोक्ति    4. अक्रमातिशयोक्ति
+(उपमेय को छिपाकर       (प्रसिद्ध वस्तु से अलग                        (असंभव सम्बंध की       (कारण से पहले ही
+केवल उपमान कहना)       बताकर वर्णन करना)                             कल्पना करना)           कार्य का होना)</code></pre><h4 id="3ee24f8d-7cec-804d-be4d-d2b978fd6dcd" class="" dir="auto">(क) रूपकातिशयोक्ति (Rupak + Atishayokti)</h4><p id="3ee24f8d-7cec-80fe-9099-f5a1b4df7dac" class="" dir="auto">जहाँ उपमेय (जिसकी बात हो रही है) को पूरी तरह छिपा दिया जाता है और केवल उपमान का नाम लेकर पूरी बात कही जाती है।</p><ul id="3ee24f8d-7cec-8035-966b-c99e1f09c5e4" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;देखहु दोऊ सपरी चलत।&quot;</em> (यहाँ &#x27;सपरी&#x27; यानी मछली शब्द का प्रयोग आँखों के लिए हुआ है, पर आँख शब्द का नाम तक नहीं लिया गया)।</li></ul><h4 id="3ee24f8d-7cec-8070-8d22-dcc57b3e03b2" class="" dir="auto">(ख) भेदातिशयोक्ति (Bhed + Atishayokti)</h4><p id="3ee24f8d-7cec-8065-ac93-e29e5e199430" class="" dir="auto">जहाँ किसी वस्तु को उसकी पूरी जाति या वर्ग से बिल्कुल अलग और विलक्षण दिखाया जाए।</p><ul id="3ee24f8d-7cec-80c4-8516-d207b81e0cce" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;अहो! यह स्त्री तो संसार की स्त्रियों से बिल्कुल भिन्न है।&quot;</em></li></ul><h4 id="3ee24f8d-7cec-808e-b1a5-d332b9c016f0" class="" dir="auto">(ग) सम्बंधातिशयोक्ति (Sambandh + Atishayokti)</h4><p id="3ee24f8d-7cec-80c1-babc-d219d0734523" class="" dir="auto">जहाँ दो चीजों में वास्तविक संबंध न होने पर भी ज़बरदस्त सम्बंध जोड़ दिया जाए।</p><ul id="3ee24f8d-7cec-8092-a663-ffb205fa9ad0" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;देखि सुदामा की दीन दसा, करुना करिके करुनानिधि रोए।&quot;</em></li></ul><h4 id="3ee24f8d-7cec-8035-af90-fe1f270421e6" class="" dir="auto">(घ) अक्रमातिशयोक्ति (Akram + Atishayokti)</h4><p id="3ee24f8d-7cec-808e-b1e7-d4959359ab30" class="" dir="auto">जहाँ कारण (Cause) से पहले ही कार्य (Effect) पूरा हो जाता है।</p><ul id="3ee24f8d-7cec-804d-b19b-e60ef0aab33a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;धनुष उठाया राम ने, अनी भागे तुरंत।&quot;</em> (अभी प्रत्यंचा चढ़ी भी नहीं और शत्रु भाग गए)।</li></ul><hr id="3ee24f8d-7cec-80d7-8406-fbaaad659115" dir="auto"/><h4 id="3ee24f8d-7cec-800c-b60f-f232fb8f951a" class="" dir="auto">4. प्रमुख उदाहरण एवं आसान स्पष्टीकरण (Key Examples with Analysis)</h4><h4 id="3ee24f8d-7cec-80e7-86cd-f636c07c2643" class="" dir="auto">(1) उदाहरण 1 (सबसे प्रसिद्ध उदाहरण — चेतक की गति)</h4><blockquote id="3ee24f8d-7cec-803e-a855-dd81447f8254" class="" dir="auto"><strong>&quot;आगे नदियाँ पड़ी अपार, घोड़ा कैसे उतरे पार।राणा ने सोचा इस पार, तब तक चेतक था उस पार॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-808f-b8a9-f1ddf9e7a0f7" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-803c-9504-e158430fdf27" class="" dir="auto">महाराणा प्रताप अभी सोच ही रहे थे कि आगे इतनी विशाल नदी है, घोड़ा कैसे पार करेगा? लेकिन उनके सोचने से पहले ही चेतक नदी के उस पार पहुँच गया! यहाँ सोचने की क्रिया (कारण) से पहले ही नदी पार करने का कार्य पूरा दिखा दिया गया है, जो लोक-सीमा से परे है।</p><hr id="3ee24f8d-7cec-808f-8983-fd698fbcdca4" dir="auto"/><h4 id="3ee24f8d-7cec-80f3-9c84-dfd6f1d4041c" class="" dir="auto">(2) उदाहरण 2 (सुदामा चरित्र)</h4><blockquote id="3ee24f8d-7cec-80bb-89fc-fab67502ab19" class="" dir="auto"><strong>&quot;पानी परात को हाथ छुयो नहिं, नैनन के जल सो पग धोए॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-8095-a837-c2e2f7bafe96" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-80c8-beac-f6612dc8fa04" class="" dir="auto">श्री कृष्ण अपने मित्र सुदामा की दीन दशा देखकर इतने भावुक हुए कि उन्होंने परात के पानी को हाथ भी नहीं लगाया और केवल अपनी आँखों के आँसुओं से ही सुदामा के पैर धो दिए। यहाँ अत्यंत आत्मीयता और दुख को बढ़ा-चढ़ाकर व्यक्त किया गया है।</p><hr id="3ee24f8d-7cec-8094-99ec-f8ac06ce55c8" dir="auto"/><h4 id="3ee24f8d-7cec-803e-891d-ec7c03561ab1" class="" dir="auto">(3) उदाहरण 3 (हनुमान जी की पूँछ)</h4><blockquote id="3ee24f8d-7cec-80ce-9de6-ef387c47dd18" class="" dir="auto"><strong>&quot;हनुमान की पूँछ में लगन न पाई आग।लंका सिगरी जरि गई, गए निसाचर भाग॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-8040-9ed2-c48357de35d6" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-8068-81b7-ea35e831cba8" class="" dir="auto">पूँछ में आग पूरी तरह लग भी नहीं पाई थी कि उससे पहले ही पूरी लंका जलकर राख हो गई और सारे राक्षस भाग खड़े हुए।</p><hr id="3ee24f8d-7cec-80b3-9162-e242f052c76a" dir="auto"/><figure id="3ee24f8d-7cec-8057-8beb-dd348a5183cf" class="image" data-notion-image="image%208.png" dir="ltr"><a href="image%208.png"><img style="width:890.0377197265625px" src="image%208.png"/></a></figure><hr id="3ee24f8d-7cec-8076-afaa-fa6a6023280f" dir="auto"/><h3 id="3ee24f8d-7cec-8089-bc73-e902a894345c" class="" dir="auto">💡 Quick Recall Table (परीक्षा के लिए झटपट रिवीजन)</h3><table id="3ee24f8d-7cec-80ee-9adb-c786e1178ca5" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80b3-b71e-d5f21b9015d5" dir="ltr"><th id="KlXP" class="simple-table-header-color simple-table-header">अलंकार</th><th id="t:_a" class="simple-table-header-color simple-table-header">सबसे आसान पहचान</th><th id="b|Hw" class="simple-table-header-color simple-table-header">पहचान का तरीका</th><th id="]KVC" class="simple-table-header-color simple-table-header">प्रसिद्ध उदाहरण</th><th id="\mg{" class="simple-table-header-color simple-table-header">आसान अर्थ</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80cd-895d-cfd383c0b16e" dir="ltr"><td id="KlXP" class=""><strong>अतिशयोक्ति</strong></td><td id="t:_a" class="">लोक-सीमा का उल्लंघन (Exaggeration)।</td><td id="b|Hw" class="">जो बात वास्तविक जीवन में संभव न लगे।</td><td id="]KVC" class=""><em>राणा ने सोचा इस पार, तब तक चेतक था उस पार</em></td><td id="\mg{" class="">सोचने से पहले ही नदी पार हो जाना।</td></tr><tr id="3ee24f8d-7cec-80d9-bbe2-dc1a17192859" dir="ltr"><td id="KlXP" class=""></td><td id="t:_a" class=""></td><td id="b|Hw" class=""></td><td id="]KVC" class=""><em>पानी परात को हाथ छुयो नहिं, नैनन के जल सो पग धोए</em></td><td id="\mg{" class="">केवल आँसुओं से पैर धुल जाना।</td></tr></tbody></table><hr id="3ee24f8d-7cec-8034-a9e5-d62f63510d07" dir="auto"/><h2 id="3ee24f8d-7cec-8042-b4f1-e559275a700e" class="" dir="auto">🎯 Unit 3: शब्द-शक्तियाँ एवं काव्य-गुण (Word Powers &amp; Poetic Qualities)</h2><hr id="3ee24f8d-7cec-805a-b58b-cde59a3eeca5" dir="auto"/><h3 id="3ee24f8d-7cec-80ac-ab83-e5a5692ea4e5" class="" dir="auto">3.1.1 शब्द-शक्ति: परिचय एवं अभिधा शब्द-शक्ति (Word Power: Introduction &amp; Abhidha)</h3><h4 id="3ee24f8d-7cec-80da-b65c-ef41c7e7d7ea" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-80be-ba02-e5c1c27defd7" class="" dir="auto"><strong>शब्द-शक्ति (Word Power)</strong> का मतलब होता है — <strong>शब्द में छिपा हुआ अर्थ प्रकट करने वाली ताक़त या क्षमता।</strong></p><p id="3ee24f8d-7cec-80c5-b0d2-cdbe3efd5c88" class="" dir="auto">हम रोज़मर्रा की ज़िंदगी में जो भी शब्द बोलते हैं, उसका कोई न कोई अर्थ ज़रूर निकलता है। शब्द और उसके अर्थ के इसी सम्बंध को जगाने वाली शक्ति को <strong>&#x27;शब्द-शक्ति&#x27;</strong> कहते हैं।</p><blockquote id="3ee24f8d-7cec-801a-b708-f8bb2ff17250" class="" dir="auto"><strong>सरल सूत्र:शब्द ➔ अर्थ निकालने की क्षमता = शब्द-शक्ति</strong></blockquote><p id="3ee24f8d-7cec-80ba-9bf4-ede6681dcef0" class="" dir="auto">भारतीय काव्यशास्त्र में शब्द-शक्ति के <strong>3 मुख्य प्रकार</strong> माने गए हैं:</p><pre id="3ee24f8d-7cec-80c1-8c2d-e903eeef46eb" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │        शब्द-शक्तियाँ (3 Types)           │
+                            └────────────────────┬────────────────────┘
+                                                 │
+            ┌────────────────────────────────────┼────────────────────────────────────┐
+            ▼                                    ▼                                    ▼
+   1. अभिधा (Abhidha)                   2. लक्षणा (Lakshana)                 3. व्यंजना (Vyanjana)
+   मुख्य / सीधा अर्थ                     लक्ष्य / संकेतित अर्थ                व्यंग्य / छिपा हुआ अर्थ
+   (Literal Meaning)                    (Indicated Meaning)                  (Suggested Meaning)</code></pre><hr id="3ee24f8d-7cec-8053-b00a-d70d00b8ddc2" dir="auto"/><h4 id="3ee24f8d-7cec-8086-841e-fa3e3bff2fb8" class="" dir="auto">2. 3.1.1 अभिधा शब्द-शक्ति (Abhidha Shabda Shakti)</h4><h4 id="3ee24f8d-7cec-8068-afc9-dd2cd9bbc08e" class="" dir="auto">(क) लक्षण एवं अवधारणा (Definition)</h4><p id="3ee24f8d-7cec-8018-ac4d-c4625ad2a8a1" class="" dir="auto">&#x27;अभिधा&#x27; सबसे पहली और मुख्य शब्द-शक्ति है। जब किसी शब्द को सुनते ही या पढ़ते ही उसका <strong>सीधा-साधा, लोक-प्रसिद्ध या कोशगत (Dictionary) अर्थ</strong> बिना किसी रुकावट के समझ में आ जाए, तो वहाँ <strong>&#x27;अभिधा शब्द-शक्ति&#x27;</strong> होती है।</p><ul id="3ee24f8d-7cec-8091-9232-c8370008eb6f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">अभिधा से निकलने वाले अर्थ को <strong>&#x27;मुख्यार्थ&#x27;</strong>, <strong>&#x27;वाच्यार्थ&#x27;</strong> या <strong>&#x27;अभिधेयार्थ&#x27;</strong> कहते हैं।</li></ul><ul id="3ee24f8d-7cec-8043-8dea-f23e75a2fe1b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">इसमें न तो कोई घुमाव होता है और न ही कोई व्यंग्य।</li></ul><blockquote id="3ee24f8d-7cec-80f0-abb2-d8dc2ad3767c" class="" dir="auto"><strong>उदाहरण:</strong><em>&quot;गाय खेत में घास चर रही है।&quot;</em><br/>(यहाँ &#x27;गाय&#x27; का अर्थ एक चौपाया पशु ही है, जो एकदम सीधा और स्पष्ट है।)</blockquote><hr id="3ee24f8d-7cec-8012-b8e5-f6523a7d98a3" dir="auto"/><h4 id="3ee24f8d-7cec-80b7-87bf-e50a77d90a4f" class="" dir="auto">(ख) अभिधा से निकलने वाले 3 प्रकार के शब्द (Types of Words in Abhidha)</h4><p id="3ee24f8d-7cec-8060-9098-ff1fa197d90b" class="" dir="auto">अभिधा शब्द-शक्ति के अंतर्गत आने वाले शब्दों को तीन भागों में बाँटा जाता है:</p><table id="3ee24f8d-7cec-807c-92da-def62ccc3a52" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-8036-b6cc-c0f1a08105fd" dir="ltr"><th id="{oAz" class="simple-table-header-color simple-table-header">क्र.सं.</th><th id="`wak" class="simple-table-header-color simple-table-header">शब्द का भेद</th><th id="vh&gt;A" class="simple-table-header-color simple-table-header">आसान अर्थ</th><th id="n~|&gt;" class="simple-table-header-color simple-table-header">उदाहरण</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80b3-8057-e9d132ce6264" dir="ltr"><td id="{oAz" class=""><strong>1</strong></td><td id="`wak" class=""><strong>रूढ़ शब्द (Rudh)</strong></td><td id="vh&gt;A" class="">ऐसे शब्द जिनके टुकड़े करने पर कोई अर्थ नहीं निकलता।</td><td id="n~|&gt;" class=""><strong>घर, पेड़, जल, हाथ</strong></td></tr><tr id="3ee24f8d-7cec-8048-ae8f-e4607e9cee43" dir="ltr"><td id="{oAz" class=""><strong>2</strong></td><td id="`wak" class=""><strong>यौगिक शब्द (Yaugik)</strong></td><td id="vh&gt;A" class="">जो दो या अधिक शब्दों/प्रत्ययों के योग से बनते हैं।</td><td id="n~|&gt;" class=""><strong>पाठशाला</strong> (पाठ + शाला), <strong>दूधवाला</strong></td></tr><tr id="3ee24f8d-7cec-80cb-8c6b-c8e540004d4d" dir="ltr"><td id="{oAz" class=""><strong>3</strong></td><td id="`wak" class=""><strong>योगरूढ़ शब्द (Yogrudh)</strong></td><td id="vh&gt;A" class="">जो यौगिक होते हुए भी किसी खास अर्थ के लिए प्रसिद्ध हो गए हों।</td><td id="n~|&gt;" class=""><strong>पंकज</strong> (कीचड़ में जन्मा = कमल), <strong>जलज</strong></td></tr></tbody></table><hr id="3ee24f8d-7cec-808f-8886-fc3b1b495fc0" dir="auto"/><h4 id="3ee24f8d-7cec-801b-99f0-c6c5e82e7668" class="" dir="auto">3. प्रमुख उदाहरण एवं स्पष्टीकरण (Examples)</h4><h4 id="3ee24f8d-7cec-8010-b182-f6bea75ad096" class="" dir="auto">(1) उदाहरण 1</h4><blockquote id="3ee24f8d-7cec-806d-80ff-ff1b2b6b469b" class="" dir="auto"><strong>&quot;भारत की राजधानी नई दिल्ली है।&quot;</strong></blockquote><ul id="3ee24f8d-7cec-80e4-be42-ef85764d566c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>स्पष्टीकरण:</strong> इस वाक्य को पढ़ते ही सीधा और स्पष्ट अर्थ समझ आता है। इसमें किसी कल्पना या घुमावदार अर्थ की आवश्यकता नहीं है।</li></ul><h4 id="3ee24f8d-7cec-8046-aecb-f06529ea160e" class="" dir="auto">(2) उदाहरण 2</h4><blockquote id="3ee24f8d-7cec-809a-921c-ebfc9303d9ab" class="" dir="auto"><strong>&quot;राम धनुष उठाकर बाण चलाते हैं।&quot;</strong></blockquote><ul id="3ee24f8d-7cec-80d2-a67e-cdb52ce801a8" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>स्पष्टीकरण:</strong> यहाँ &#x27;राम&#x27;, &#x27;धनुष&#x27; और &#x27;बाण&#x27; शब्दों का वही अर्थ लिया गया है जो डिक्शनरी (शब्दकोश) में प्रसिद्ध है।</li></ul><hr id="3ee24f8d-7cec-8095-92f0-d7c3b7a9cf44" dir="auto"/><figure id="3ee24f8d-7cec-8040-adbd-df460ecf8548" class="image" data-notion-image="image%209.png" dir="ltr"><a href="image%209.png"><img style="width:890.0377197265625px" src="image%209.png"/></a></figure><table id="3ee24f8d-7cec-804a-9b1c-d4bfcfe15951" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80c3-a9c1-de42c4b5192a" dir="ltr"><th id="jr\t" class="simple-table-header-color simple-table-header">शब्द-शक्ति</th><th id="xD^m" class="simple-table-header-color simple-table-header">मुख्य नाम</th><th id="FWqE" class="simple-table-header-color simple-table-header">अर्थ का प्रकार</th><th id="Y^rq" class="simple-table-header-color simple-table-header">पहचान का तरीका</th><th id="eO&gt;Q" class="simple-table-header-color simple-table-header">उदाहरण</th></tr></thead><tbody><tr id="3ee24f8d-7cec-8050-9a43-cd272c8c571b" dir="ltr"><td id="jr\t" class=""><strong>अभिधा</strong></td><td id="xD^m" class="">वाचक</td><td id="FWqE" class=""><strong>वाच्यार्थ / मुख्यार्थ</strong> (Literal)</td><td id="Y^rq" class="">सीधा-सच्चा अर्थ, कोई घुमाव या व्यंग्य नहीं।</td><td id="eO&gt;Q" class=""><em>गाय खेत में घास चर रही है।</em></td></tr></tbody></table><hr id="3ee24f8d-7cec-8027-befb-e35a8a4b7402" dir="auto"/><hr id="3ee24f8d-7cec-8088-a2d5-dc463d343726" dir="auto"/><h3 id="3ee24f8d-7cec-8081-8fe4-c76ad7232202" class="" dir="auto">3.1.2 लक्षणा शब्द-शक्ति (Lakshana Shabda Shakti / Indicated Meaning)</h3><h4 id="3ee24f8d-7cec-8039-9327-ca83147da649" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-80ec-bded-dff8df883fa1" class="" dir="auto">जब किसी वाक्य में मुख्य अर्थ (अभिधा/मुख्यार्थ) में <strong>बाधा (Rukawat)</strong> आ जाए, यानी सीधा अर्थ लेने पर बात बेतुकी या अटपटी लगे, तो हम सीधा अर्थ छोड़कर उससे जुड़ा हुआ <strong>दूसरा लक्षित अर्थ (Indicated Meaning)</strong> लेते हैं।</p><p id="3ee24f8d-7cec-808c-a95b-d677ff825825" class="" dir="auto">इसे ही <strong>&#x27;लक्षणा शब्द-शक्ति&#x27;</strong> कहते हैं।</p><blockquote id="3ee24f8d-7cec-8014-a22c-e939353a1d7b" class="" dir="auto"><strong>सरल सूत्र:मुख्य अर्थ में रुकावट + रूढ़ि या प्रयोजन ➔ लक्षित अर्थ लेना = लक्षणा शब्द-शक्ति</strong><em>(जैसे: &quot;वह तो बिल्कुल गधा है!&quot; ➔ यहाँ मनुष्य जानवर &#x27;गधा&#x27; नहीं बन सकता, पर अर्थ लिया गया &#x27;मूर्ख&#x27;)</em></blockquote><hr id="3ee24f8d-7cec-80b2-87b5-ebf547273789" dir="auto"/><h4 id="3ee24f8d-7cec-80ff-a7c8-eab9e61ce94e" class="" dir="auto">2. लक्षणा की 3 अनिवार्य शर्तें (3 Conditions for Lakshana)</h4><p id="3ee24f8d-7cec-80dd-9cf1-f12df5935d41" class="" dir="auto">लक्षणा शब्द-शक्ति होने के लिए 3 बातों का होना बहुत ज़रूरी है:</p><table id="3ee24f8d-7cec-800d-9f77-e2d2456a6580" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80b5-9fe7-fe3cd8f59bad" dir="ltr"><th id="mCvC" class="simple-table-header-color simple-table-header">क्र.सं.</th><th id="F?Eu" class="simple-table-header-color simple-table-header">शर्त (Condition)</th><th id="sgzf" class="simple-table-header-color simple-table-header">आसान अर्थ</th><th id="mPuA" class="simple-table-header-color simple-table-header">उदाहरण से समझें (<em>&quot;पंजाब वीर है&quot;</em>)</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80fe-872b-c0f43cc397d0" dir="ltr"><td id="mCvC" class=""><strong>1</strong></td><td id="F?Eu" class=""><strong>मुख्यार्थ बाधा</strong></td><td id="sgzf" class="">सीधा अर्थ लेने पर बात बेतुकी लगे।</td><td id="mPuA" class="">पंजाब (राज्य) खुद लड़ाई नहीं लड़ सकता।</td></tr><tr id="3ee24f8d-7cec-8076-b93d-cc8636603ba4" dir="ltr"><td id="mCvC" class=""><strong>2</strong></td><td id="F?Eu" class=""><strong>लक्ष्यार्थ सम्बंध</strong></td><td id="sgzf" class="">मुख्य अर्थ और नए अर्थ में गहरा जुड़ाव हो।</td><td id="mPuA" class="">पंजाब के &#x27;निवासी/लोग&#x27; वीर हैं।</td></tr><tr id="3ee24f8d-7cec-8007-8cdf-c4d5fc45a617" dir="ltr"><td id="mCvC" class=""><strong>3</strong></td><td id="F?Eu" class=""><strong>रूढ़ि या प्रयोजन</strong></td><td id="sgzf" class="">परंपरा (Habit) या कोई खास मकसद (Purpose) हो।</td><td id="mPuA" class="">&#x27;पंजाब&#x27; बोलना एक प्रचलित मुहावरा/शैली है।</td></tr></tbody></table><hr id="3ee24f8d-7cec-8070-9fef-d3662809fba6" dir="auto"/><h4 id="3ee24f8d-7cec-809c-b0a5-c13040a49ad7" class="" dir="auto">3. लक्षणा शब्द-शक्ति के 2 मुख्य भेद (2 Main Types)</h4><p id="3ee24f8d-7cec-808c-87dc-c38bfc4479a7" class="" dir="auto">लक्षणा को मुख्य रूप से दो भागों में बाँटा जाता है:</p><pre id="3ee24f8d-7cec-802c-96b8-f638979f38d1" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │      लक्षणा के मुख्य भेद (2 Types)        │
+                            └────────────────────┬────────────────────┘
+                                                 │
+            ┌────────────────────────────────────┴────────────────────────────────────┐
+            ▼                                                                         ▼
+   1. रूढ़ा लक्षणा (Rudha Lakshana)                                           2. प्रयोजनवती लक्षणा (Prayojanvati)
+   जो सदियों से परंपरा, मुहावरे या                                              किसी विशेष उद्देश्य/मकसद (Purpose)
+   प्रचलन के कारण बोली जाती है।                                               को सिद्ध करने के लिए प्रयोग की जाए।</code></pre><h4 id="3ee24f8d-7cec-80d2-89bd-c905da117d97" class="" dir="auto">(क) रूढ़ा लक्षणा (Rudha Lakshana)</h4><p id="3ee24f8d-7cec-8016-881e-db78d6ee555b" class="" dir="auto">जहाँ सदियों से चले आ रहे मुहावरों या रूढ़ियों के कारण लक्ष्यार्थ लिया जाता है।</p><ul id="3ee24f8d-7cec-805e-b496-cab5bed7f103" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;भारत जाग उठा।&quot;</em> (यहाँ भारत का मतलब &#x27;भारत के लोग&#x27; है, जो परंपरा से चला आ रहा है)।</li></ul><ul id="3ee24f8d-7cec-8031-8079-da036b5a451b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;राजस्थान वीर है।&quot;</em></li></ul><h4 id="3ee24f8d-7cec-8037-bd9c-f28aeff359a1" class="" dir="auto">(ख) प्रयोजनवती लक्षणा (Prayojanvati Lakshana)</h4><p id="3ee24f8d-7cec-8034-a215-f77cfab67836" class="" dir="auto">जहाँ किसी खास बात पर ज़ोर देने या अपना मकसद (प्रयोजन) सिद्ध करने के लिए लक्ष्यार्थ लिया जाता है।</p><ul id="3ee24f8d-7cec-8027-9f65-f6bef6988430" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;गंगा पर घर है।&quot;(गंगा की धार पर घर नहीं बन सकता, लेकिन &#x27;गंगा के किनारे&#x27; बताने और घर में &#x27;पवित्रता व शीतलता&#x27; का अहसास कराने के मकसद से ऐसा कहा गया)।</em></li></ul><hr id="3ee24f8d-7cec-80bf-b959-df1703aa0a60" dir="auto"/><h4 id="3ee24f8d-7cec-805f-ad3e-f5cf9ae2d479" class="" dir="auto">4. प्रमुख उदाहरण एवं आसान स्पष्टीकरण (Key Examples with Analysis)</h4><h4 id="3ee24f8d-7cec-802f-b6c6-ef6391d54999" class="" dir="auto">(1) उदाहरण 1 (दैनिक जीवन का सबसे प्रसिद्ध उदाहरण)</h4><blockquote id="3ee24f8d-7cec-80fb-a6b4-c5d3b6e60a86" class="" dir="auto"><strong>&quot;रमेश तो बिल्कुल गाय है।&quot;</strong></blockquote><p id="3ee24f8d-7cec-806a-9a55-e6308fba9321" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><ul id="3ee24f8d-7cec-80f2-aaef-f5099e926349" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मुख्यार्थ में बाधा:</strong> रमेश एक इंसान है, वह चार टाँगों वाली &#x27;गाय&#x27; नहीं हो सकता।</li></ul><ul id="3ee24f8d-7cec-80fd-9ca4-fc53c6fc126c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>लक्ष्यार्थ:</strong> यहाँ &#x27;गाय&#x27; का सीधा अर्थ न लेकर गाय का गुण — <strong>&#x27;सीधा-साधा / निष्पाप होना&#x27;</strong> लिया गया है।</li></ul><hr id="3ee24f8d-7cec-80db-991b-d8ba2b61ca04" dir="auto"/><h4 id="3ee24f8d-7cec-80f2-84d2-eaeeb82e2cc9" class="" dir="auto">(2) उदाहरण 2</h4><blockquote id="3ee24f8d-7cec-8043-9c9a-e9e975b6dee0" class="" dir="auto"><strong>&quot;लाठियाँ चल रही हैं।&quot;</strong></blockquote><p id="3ee24f8d-7cec-80eb-bad9-f5772fe3c452" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><ul id="3ee24f8d-7cec-8080-bdf9-ce2a499a9bdf" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मुख्यार्थ में बाधा:</strong> लाठियाँ खुद चलकर नहीं लड़ सकतीं।</li></ul><ul id="3ee24f8d-7cec-8093-bf15-ca2b6e93b228" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>लक्ष्यार्थ:</strong> लाठियों से <strong>&#x27;लाठी चलाने वाले लोग&#x27;</strong> आपस में लड़ रहे हैं।</li></ul><hr id="3ee24f8d-7cec-80fe-8d77-c92416909983" dir="auto"/><h4 id="3ee24f8d-7cec-801c-be33-cc4119e2e326" class="" dir="auto">(3) उदाहरण 3</h4><blockquote id="3ee24f8d-7cec-8090-b14a-d74e5724777d" class="" dir="auto"><strong>&quot;सड़क पर सन्नाटा बोल रहा है।&quot;</strong></blockquote><p id="3ee24f8d-7cec-8067-8683-d79077b5518f" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><ul id="3ee24f8d-7cec-80a2-8423-d179179efd17" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मुख्यार्थ में बाधा:</strong> &#x27;सन्नाटा&#x27; शांत होता है, वह खुद बोल नहीं सकता।</li></ul><ul id="3ee24f8d-7cec-80c8-ac40-edb7dd56d9b3" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>लक्ष्यार्थ:</strong> सड़क पर <strong>&#x27;गहरा सूनापन और शांति&#x27;</strong> छा चुकी है।</li></ul><hr id="3ee24f8d-7cec-80a6-97e5-ce346c5eb7d2" dir="auto"/><figure id="3ee24f8d-7cec-805f-9dca-ce1c35684b86" class="image" data-notion-image="image%2010.png" dir="ltr"><a href="image%2010.png"><img style="width:890.0377197265625px" src="image%2010.png"/></a></figure><hr id="3ee24f8d-7cec-8001-b9b4-edf0409385cf" dir="auto"/><h3 id="3ee24f8d-7cec-80ac-bd09-f0d5f8f39925" class="" dir="auto">💡 Quick Recall Table (परीक्षा के लिए झटपट रिवीजन)</h3><table id="3ee24f8d-7cec-8081-beca-fd295cce852e" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80ce-9f39-c080e499d9a5" dir="ltr"><th id="gAHQ" class="simple-table-header-color simple-table-header">शब्द-शक्ति</th><th id="_~?c" class="simple-table-header-color simple-table-header">मुख्य नाम</th><th id="E^aC" class="simple-table-header-color simple-table-header">अर्थ का प्रकार</th><th id="VBnF" class="simple-table-header-color simple-table-header">पहचान का तरीका</th><th id="FiW]" class="simple-table-header-color simple-table-header">प्रसिद्ध उदाहरण</th></tr></thead><tbody><tr id="3ee24f8d-7cec-8095-bb87-f1c5938a5f9c" dir="ltr"><td id="gAHQ" class=""><strong>लक्षणा</strong></td><td id="_~?c" class="">लक्षक</td><td id="E^aC" class=""><strong>लक्ष्यार्थ</strong> (Indicated)</td><td id="VBnF" class="">सीधा अर्थ बेतुका लगे, तो उससे जुड़ा दूसरा अर्थ लेना।</td><td id="FiW]" class=""><em>रमेश बिल्कुल गाय है। (गाय = सीधा)</em>&lt;br&gt;</td></tr></tbody></table><p id="3ee24f8d-7cec-808b-aef1-c4446edbb242" class="" dir="auto">&lt;br&gt;<em>गंगा पर गाँव है। (गंगा तट पर)</em> |</p><hr id="3ee24f8d-7cec-805f-8164-d2464a279b0c" dir="auto"/><hr id="3ee24f8d-7cec-8063-8d9e-d2c35db6fc45" dir="auto"/><h3 id="3ee24f8d-7cec-801f-a14f-f75c792d7ee8" class="" dir="auto">3.1.3 व्यंजना शब्द-शक्ति (Vyanjana Shabda Shakti / Suggested Meaning)</h3><h4 id="3ee24f8d-7cec-8092-b948-cc009b36e323" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-80be-97b9-ddefa826cc5b" class="" dir="auto">&#x27;व्यंजना&#x27; शब्द-शक्ति का सबसे गहरा और सुंदर रूप है।</p><p id="3ee24f8d-7cec-80f4-8163-edfe3444a188" class="" dir="auto">जब किसी वाक्य का न तो सीधा अर्थ (<strong>अभिधा/मुख्यार्थ</strong>) लिया जाए और न ही उससे जुड़ा लक्षित अर्थ (<strong>लक्षणा/लक्ष्यार्थ</strong>), बल्कि स्थिति, संदर्भ या सुनने वाले के हिसाब से <strong>एक नया ही छिपा हुआ व्यंग्य या सांकेतिक अर्थ (Suggested Meaning)</strong> निकले, तो वहाँ <strong>&#x27;व्यंजना शब्द-शक्ति&#x27;</strong> होती है।</p><blockquote id="3ee24f8d-7cec-8015-9e6d-d04512c79dde" class="" dir="auto"><strong>सरल सूत्र:एक वाक्य + अलग-अलग लोगों के लिए अलग-अलग अर्थ = व्यंजना शब्द-शक्ति</strong><em>(जैसे: &quot;संध्या के पाँच बज गए!&quot; ➔ पुजारी के लिए पूजा का समय, किसान के लिए घर लौटने का समय, बच्चे के लिए खेलने का समय)</em></blockquote><hr id="3ee24f8d-7cec-805c-bb2f-c161f28b0d76" dir="auto"/><h4 id="3ee24f8d-7cec-8098-903c-d587b0639a9a" class="" dir="auto">2. तीनों शब्द-शक्तियों का तुलनात्मक अंतर (Quick Comparison)</h4><p id="3ee24f8d-7cec-804a-98bc-ed163d449b06" class="" dir="auto">व्यंजना को समझने के लिए तीनों शक्तियों को एक साथ देखना सबसे आसान तरीका है:</p><table id="3ee24f8d-7cec-8090-bd5c-e7ebac56de0b" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80bd-a42f-d63d49b413b4" dir="ltr"><th id="``\K" class="simple-table-header-color simple-table-header">शब्द-शक्ति</th><th id="r@Ut" class="simple-table-header-color simple-table-header">अर्थ का प्रकार</th><th id="VcCZ" class="simple-table-header-color simple-table-header">कार्य / पहचान</th><th id="Pu:L" class="simple-table-header-color simple-table-header">प्रसिद्ध उदाहरण (<em>&quot;सूर्य अस्त हो गया&quot;</em>)</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80bb-8dc4-d1c29042fb28" dir="ltr"><td id="``\K" class=""><strong>1. अभिधा</strong></td><td id="r@Ut" class=""><strong>मुख्यार्थ</strong> (Literal)</td><td id="VcCZ" class="">सीधा-सच्चा अर्थ बताना।</td><td id="Pu:L" class="">सूरज डूब गया (दिन ढल गया)।</td></tr><tr id="3ee24f8d-7cec-80d2-a1e9-e3c0ef25057f" dir="ltr"><td id="``\K" class=""><strong>2. लक्षणा</strong></td><td id="r@Ut" class=""><strong>लक्ष्यार्थ</strong> (Indicated)</td><td id="VcCZ" class="">मुख्य अर्थ बदलकर लक्षित अर्थ देना।</td><td id="Pu:L" class="">उजाला खत्म, अब अँधेरा हो गया।</td></tr><tr id="3ee24f8d-7cec-80f4-b6ec-e00f42628342" dir="ltr"><td id="``\K" class=""><strong>3. व्यंजना</strong></td><td id="r@Ut" class=""><strong>व्यंग्यार्थ</strong> (Suggested)</td><td id="VcCZ" class="">संदर्भ के अनुसार नया अर्थ निकालना।</td><td id="Pu:L" class=""><strong>पुजारी:</strong> संध्या वंदन करो।&lt;br&gt;</td></tr></tbody></table><p id="3ee24f8d-7cec-8011-a56f-e7234c498369" class="" dir="auto">&lt;br&gt;<strong>गृहिणी:</strong> दीया जलाओ।&lt;br&gt;</p><p id="3ee24f8d-7cec-801f-8e75-f3650dec9ed8" class="" dir="auto">&lt;br&gt;<strong>चरवाहा:</strong> घर की ओर चलो। |</p><hr id="3ee24f8d-7cec-80c6-a57b-f9bc7a2c7eb5" dir="auto"/><h4 id="3ee24f8d-7cec-80a9-8024-c5ec8b59c289" class="" dir="auto">3. व्यंजना शब्द-शक्ति के 2 मुख्य भेद (2 Main Types)</h4><p id="3ee24f8d-7cec-8051-8fc2-caf059aaac56" class="" dir="auto">व्यंजना शब्द-शक्ति को दो भागों में बाँटा जाता है:</p><pre id="3ee24f8d-7cec-80c7-a991-e873a1f24b6f" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │      व्यंजना के मुख्य भेद (2 Types)       │
+                            └────────────────────┬────────────────────┘
+                                                 │
+            ┌────────────────────────────────────┴────────────────────────────────────┐
+            ▼                                                                         ▼
+   1. शाब्दी व्यंजना (Shabdi Vyanjana)                                        2. आर्थी व्यंजना (Aarthi Vyanjana)
+   जो अर्थ किसी &#x27;खास शब्द&#x27; पर निर्भर करे।                                      जो शब्द पर नहीं, बल्कि &#x27;अर्थ&#x27; और
+   (पर्यायवाची शब्द बदलने पर व्यंजना खत्म)                                      &#x27;संदर्भ&#x27; (Context) पर निर्भर करे।</code></pre><h4 id="3ee24f8d-7cec-8032-8032-eb6c8f3b48e0" class="" dir="auto">(क) शाब्दी व्यंजना (Shabdi Vyanjana)</h4><p id="3ee24f8d-7cec-8050-a9dd-f0c37ff99dd1" class="" dir="auto">जहाँ व्यंग्यार्थ किसी <strong>विशेष शब्द</strong> के प्रयोग पर ही टिका होता है। अगर उस शब्द की जगह उसका पर्यायवाची (Synonym) रख दिया जाए, तो व्यंजना खत्म हो जाती है। (यह प्रायः &#x27;श्लेष अलंकार&#x27; में दिखती है)।</p><ul id="3ee24f8d-7cec-8051-aaf9-dc344e2852e5" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;चिरजीवौ जोरी जुरै, क्यों न स्नेह गंभीर। को घटि ए वृषभानुजा, वे हलधर के वीर॥&quot;(यहाँ &#x27;वृषभानुजा&#x27; का अर्थ राधा और गाय दोनों है, तथा &#x27;हलधर के वीर&#x27; का अर्थ बलराम के भाई कृष्ण और बैल दोनों है।)</em></li></ul><h4 id="3ee24f8d-7cec-80e0-bba0-c34ceede0f7d" class="" dir="auto">(ख) आर्थी व्यंजना (Aarthi Vyanjana)</h4><p id="3ee24f8d-7cec-8093-a8a7-ea88f86f3124" class="" dir="auto">जहाँ व्यंग्यार्थ शब्दों पर निर्भर न होकर <strong>अर्थ और बोलने वाले की स्थिति/प्रसंग</strong> पर निर्भर करता है। यहाँ पर्यायवाची शब्द बदलने पर भी व्यंग्यार्थ बना रहता है।</p><ul id="3ee24f8d-7cec-803a-a7ca-c3070d928b6e" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उदाहरण:</strong> <em>&quot;अब तो रात के बारह बज गए।&quot;(सुनने वाले अपनी-अपनी स्थिति के अनुसार अर्थ निकालेंगे कि अब सो जाना चाहिए, या पढ़ाई रोक देनी चाहिए।)</em></li></ul><hr id="3ee24f8d-7cec-8023-811e-feee299a1967" dir="auto"/><h4 id="3ee24f8d-7cec-8088-9230-c680dde98061" class="" dir="auto">4. प्रमुख उदाहरण एवं आसान स्पष्टीकरण (Key Examples with Analysis)</h4><h4 id="3ee24f8d-7cec-800f-9cf1-f6c4a429da78" class="" dir="auto">(1) उदाहरण 1 (दैनिक जीवन का सबसे बेहतरीन उदाहरण)</h4><blockquote id="3ee24f8d-7cec-80fc-a632-ea9eba6e3d88" class="" dir="auto"><strong>&quot;घर में मेहमान आए हैं और माँ ने कहा: &#x27;संध्या हो गई है!&#x27;&quot;</strong></blockquote><p id="3ee24f8d-7cec-8063-8032-e67b3676a64f" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><ul id="3ee24f8d-7cec-803c-8c54-fad5e91f76fc" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>मुख्यार्थ:</strong> शाम का समय हो गया है।</li></ul><ul id="3ee24f8d-7cec-8096-b0b2-ec40fe759be9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>व्यंग्यार्थ (व्यंजना):</strong> माँ के इस एक वाक्य का अर्थ सबके लिए अलग है —</li></ul><ol type="1" id="3ee24f8d-7cec-809c-8015-ec4ef67546c3" class="numbered-list" start="1" dir="auto"><li><strong>बेटी के लिए:</strong> चाय-नाश्ता बनाने का समय हो गया।</li></ol><ol type="1" id="3ee24f8d-7cec-8037-871e-f59ffebcd1b2" class="numbered-list" start="2" dir="auto"><li><strong>बेटे के लिए:</strong> बिजली की बत्तियाँ/लाइट जलाने का समय हो गया।</li></ol><ol type="1" id="3ee24f8d-7cec-80ce-b7a3-f0cbd0301143" class="numbered-list" start="3" dir="auto"><li><strong>पुजारी के लिए:</strong> संध्या-आरती का समय हो गया।</li></ol><hr id="3ee24f8d-7cec-801d-a18f-f2523b040656" dir="auto"/><h4 id="3ee24f8d-7cec-8049-8946-ce230b053480" class="" dir="auto">(2) उदाहरण 2 (काव्य का उदाहरण)</h4><blockquote id="3ee24f8d-7cec-8075-9d51-e385e9bb20de" class="" dir="auto"><strong>&quot;रहसि रमि कुसुमित कानन, तुम गए हसि-हसि काढ़ि।हमहूँ सब समझति सखी, पिय की प्रीति उबाढ़ि॥&quot;</strong></blockquote><p id="3ee24f8d-7cec-80c4-8779-f5a1c168beb3" class="" dir="auto"><strong>विस्तृत विश्लेषण:</strong></p><p id="3ee24f8d-7cec-80b1-bf0c-d52750fed88a" class="" dir="auto">यहाँ सखी के कहने का सीधा अर्थ कुछ और है, लेकिन छिपा हुआ व्यंग्यार्थ यह है कि प्रिय का प्रेम सच्चा नहीं बल्कि केवल दिखावा है।</p><hr id="3ee24f8d-7cec-809b-b5e9-f79d1b85b86e" dir="auto"/><figure id="3ee24f8d-7cec-8049-a875-cd95cab437a4" class="image" data-notion-image="image%2011.png" dir="ltr"><a href="image%2011.png"><img style="width:890.0377197265625px" src="image%2011.png"/></a></figure><hr id="3ee24f8d-7cec-80ee-b3ad-d47a5e63e682" dir="auto"/><h3 id="3ee24f8d-7cec-8080-99b1-e2059bdbe7eb" class="" dir="auto">💡 Quick Recall Table (परीक्षा के लिए झटपट रिवीजन)</h3><table id="3ee24f8d-7cec-80de-b6ac-f45540d23f93" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-8014-8d76-cd21a61799d7" dir="ltr"><th id="n]W`" class="simple-table-header-color simple-table-header">शब्द-शक्ति</th><th id="eIOv" class="simple-table-header-color simple-table-header">मुख्य नाम</th><th id=":L_J" class="simple-table-header-color simple-table-header">अर्थ का प्रकार</th><th id="\bCH" class="simple-table-header-color simple-table-header">पहचान का तरीका</th><th id="=hB_" class="simple-table-header-color simple-table-header">प्रसिद्ध उदाहरण</th></tr></thead><tbody><tr id="3ee24f8d-7cec-8091-bbf3-d13377c2cc6f" dir="ltr"><td id="n]W`" class=""><strong>व्यंजना</strong></td><td id="eIOv" class="">व्यंजक</td><td id=":L_J" class=""><strong>व्यंग्यार्थ</strong> (Suggested)</td><td id="\bCH" class="">एक ही वाक्य से अलग-अलग संदर्भ में नया/छिपा अर्थ निकलना।</td><td id="=hB_" class=""><em>&quot;संध्या हो गई!&quot;</em>&lt;br&gt;</td></tr></tbody></table><p id="3ee24f8d-7cec-807b-9071-e24d91290aa1" class="" dir="auto">&lt;br&gt;(अलग-अलग लोगों के लिए अलग काम का समय) |</p><hr id="3ee24f8d-7cec-8043-98da-d84073bb7991" dir="auto"/><hr id="3ee24f8d-7cec-80c3-9035-d5cc6836d6e1" dir="auto"/><h3 id="3ee24f8d-7cec-80c0-9e00-e38626d052e2" class="" dir="auto">3.1.4 शब्द-शक्तियों का तुलनात्मक अध्ययन (Comparative Analysis of Word Powers)</h3><h4 id="3ee24f8d-7cec-80f2-8ab9-f3c900e0f8bc" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-80f5-9439-f96cb445252f" class="" dir="auto">अब तक हमने तीनों शब्द-शक्तियों — <strong>अभिधा (Abhidha)</strong>, <strong>लक्षणा (Lakshana)</strong>, और <strong>व्यंजना (Vyanjana)</strong> को अलग-अलग पढ़ा। इस सेक्शन (3.1.4) में हम तीनों का <strong>तुलनात्मक अध्ययन (Comparative Analysis)</strong> करेंगे ताकि परीक्षा में अंतर लिखना और पहचानना एकदम आसान हो जाए।</p><blockquote id="3ee24f8d-7cec-804a-9909-d25630e1ba3e" class="" dir="auto"><strong>सरल सूत्र:</strong><ul id="3ee24f8d-7cec-8060-a2d0-f08eab56c9c9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>अभिधा</strong> ➔ सीधा/डिक्शनरी अर्थ (Literal Meaning)</li></ul><ul id="3ee24f8d-7cec-8049-8949-c8ed2bda7f9a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>लक्षणा</strong> ➔ मुख्य अर्थ में रुकावट के बाद &#x27;लक्षित अर्थ&#x27; (Indicated Meaning)</li></ul><ul id="3ee24f8d-7cec-80fb-87bd-deabfbeaf19c" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>व्यंजना</strong> ➔ प्रसंग/संदर्भ के हिसाब से &#x27;छिपा हुआ व्यंग्यार्थ&#x27; (Suggested Meaning)</li></ul></blockquote><hr id="3ee24f8d-7cec-80f0-a836-f3143d98a26d" dir="auto"/><h4 id="3ee24f8d-7cec-80de-a3c0-fdb77dce2897" class="" dir="auto">2. तीनों शब्द-शक्तियों में मुख्य अंतर (Comparison Table)</h4><p id="3ee24f8d-7cec-8037-959f-d7f016a38b27" class="" dir="auto">परीक्षा के दृष्टिकोण से तीनों शब्द-शक्तियों का मुख्य अंतर इस प्रकार है:</p><table id="3ee24f8d-7cec-804a-a89a-dc72155ddebb" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-808c-a3e5-c0cb07c027ac" dir="ltr"><th id="{;cr" class="simple-table-header-color simple-table-header">अंतर का आधार</th><th id="U[]~" class="simple-table-header-color simple-table-header">1. अभिधा (Abhidha)</th><th id="L~xv" class="simple-table-header-color simple-table-header">2. लक्षणा (Lakshana)</th><th id="lNqJ" class="simple-table-header-color simple-table-header">3. व्यंजना (Vyanjana)</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80f0-bd16-cf4f9afe6ac0" dir="ltr"><td id="{;cr" class=""><strong>1. अर्थ का स्वरूप</strong></td><td id="U[]~" class="">इसमें सीधा, प्रसिद्ध और कोशगत (Dictionary) अर्थ मिलता है।</td><td id="L~xv" class="">इसमें मुख्य अर्थ बाधित होता है और लक्षित अर्थ लिया जाता है।</td><td id="lNqJ" class="">इसमें मुख्य अर्थ और लक्ष्यार्थ से परे एक नया व्यंग्यार्थ मिलता है।</td></tr><tr id="3ee24f8d-7cec-8084-bba6-f2d314d4ccc5" dir="ltr"><td id="{;cr" class=""><strong>2. शब्द का नाम</strong></td><td id="U[]~" class="">वाचक शब्द</td><td id="L~xv" class="">लाक्षणिक शब्द</td><td id="lNqJ" class="">व्यंजक शब्द</td></tr><tr id="3ee24f8d-7cec-8013-8788-f8c401887a4f" dir="ltr"><td id="{;cr" class=""><strong>3. अर्थ का नाम</strong></td><td id="U[]~" class="">वाच्यार्थ / मुख्यार्थ</td><td id="L~xv" class="">लक्ष्यार्थ</td><td id="lNqJ" class="">व्यंग्यार्थ</td></tr><tr id="3ee24f8d-7cec-8044-97f6-c20e30ac2910" dir="ltr"><td id="{;cr" class=""><strong>4. बोध की स्थिति</strong></td><td id="U[]~" class="">शब्द सुनते ही बिना किसी रुकावट के अर्थ समझ आता है।</td><td id="L~xv" class="">मुख्य अर्थ में रुकावट आने पर सम्बंधित अर्थ समझ आता है।</td><td id="lNqJ" class="">प्रसंग, स्थिति और वक्ता के हिसाब से अर्थ निकलता है।</td></tr><tr id="3ee24f8d-7cec-800c-b344-da030f9225bf" dir="ltr"><td id="{;cr" class=""><strong>5. नियम / शर्त</strong></td><td id="U[]~" class="">इसके लिए किसी विशेष शर्त की ज़रूरत नहीं होती।</td><td id="L~xv" class="">इसके लिए मुख्यार्थ बाधा, सम्बन्ध और रूढ़ि/प्रयोजन ज़रूरी है।</td><td id="lNqJ" class="">यह वक्ता, श्रोता और प्रसंग की स्थिति पर निर्भर करती है।</td></tr><tr id="3ee24f8d-7cec-8061-8972-f0e936c03869" dir="ltr"><td id="{;cr" class=""><strong>6. काव्यात्मक सौंदर्य</strong></td><td id="U[]~" class="">यह सबसे सरल और प्राथमिक शब्द-शक्ति है।</td><td id="L~xv" class="">यह अभिधा से अधिक गहन और चमत्कारिक होती है।</td><td id="lNqJ" class="">यह काव्य की सर्वोत्तम और सबसे गहरी शब्द-शक्ति मानी जाती है।</td></tr></tbody></table><hr id="3ee24f8d-7cec-805d-a4b4-ceae70d6189f" dir="auto"/><h4 id="3ee24f8d-7cec-80b0-af8b-edc743dabb96" class="" dir="auto">3. एक ही वाक्य से तीनों को समझें (One Example - Three Meanings)</h4><p id="3ee24f8d-7cec-8008-a424-da08f43ba227" class="" dir="auto">तीनों शब्द-शक्तियों के अंतर को एक ही उदाहरण से समझना सबसे आसान होता है:</p><blockquote id="3ee24f8d-7cec-8097-9810-cb0cbfa2abbf" class="" dir="auto"><strong>उदाहरण वाक्य:</strong> <em>&quot;सूरज डूब गया!&quot;</em></blockquote><pre id="3ee24f8d-7cec-804e-ab3f-f2ad9965313e" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                                  ┌───────────────────────────────────────────┐
+                                  │         वाक्य: &quot;सूरज डूब गया!&quot;           │
+                                  └─────────────────────┬─────────────────────┘
+                                                        │
+              ┌─────────────────────────────────────────┼─────────────────────────────────────────┐
+              ▼                                         ▼                                         ▼
+     1. अभिधा (मुख्यार्थ)                     2. लक्षणा (लक्ष्यार्थ)                    3. व्यंजना (व्यंग्यार्थ)
+     &quot;दिन खत्म हो गया और                     &quot;उजाला खत्म हो गया,                       स्थिति के हिसाब से अलग अर्थ:
+     सूरज क्षितिज से नीचे                    आगे अँधेरा होने वाला                      • पुजारी: आरती का समय
+     चला गया।&quot;                               है।&quot;                                       • गृहिणी: दीया जलाने का समय
+                                                                                        • बच्चा: खेलने का समय</code></pre><hr id="3ee24f8d-7cec-80e5-8002-e40f17b24e05" dir="auto"/><h4 id="3ee24f8d-7cec-8047-b8fc-c2df6d24ea51" class="" dir="auto">4. काव्यशास्त्र में तीनों का महत्व (Significance in Poetics)</h4><ol type="1" id="3ee24f8d-7cec-80a7-9002-fd37c6b32a53" class="numbered-list" start="1" dir="auto"><li><strong>अभिधा:</strong> यह शास्त्र, विज्ञान और साधारण बातचीत के लिए सबसे महत्वपूर्ण है क्योंकि इसमें कोई भ्रम (Confusion) नहीं होता।</li></ol><ol type="1" id="3ee24f8d-7cec-8081-a37c-f3555d20a080" class="numbered-list" start="2" dir="auto"><li><strong>लक्षणा:</strong> यह मुहावरों, लोकोक्तियों और कविता में चमत्कार उत्पन्न करने के लिए ज़रूरी है।</li></ol><ol type="1" id="3ee24f8d-7cec-80b4-ac39-d7e58cc2361b" class="numbered-list" start="3" dir="auto"><li><strong>व्यंजना:</strong> यह काव्य की आत्मा है; इसके बिना काव्य में गहराई और रसानुभूति उत्पन्न नहीं हो सकती।</li></ol><hr id="3ee24f8d-7cec-80fc-8b42-e0f9afb0c2a8" dir="auto"/><figure id="3ee24f8d-7cec-8073-9c8d-ca5321f76674" class="image" data-notion-image="image%2012.png" dir="ltr"><a href="image%2012.png"><img style="width:890.0377197265625px" src="image%2012.png"/></a></figure><hr id="3ee24f8d-7cec-8019-8d83-ef43b5c7036f" dir="auto"/><h3 id="3ee24f8d-7cec-80ef-a35c-d86258777ef4" class="" dir="auto">💡 Quick Recall Table (परीक्षा के लिए झटपट रिवीजन)</h3><table id="3ee24f8d-7cec-80d3-978f-dedb18da1f8e" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80b0-8c89-eb19e6a0bd50" dir="ltr"><th id="=&lt;Oo" class="simple-table-header-color simple-table-header">शब्द-शक्ति</th><th id="iPkL" class="simple-table-header-color simple-table-header">अर्थ का प्रकार</th><th id="CjpH" class="simple-table-header-color simple-table-header">मुख्य पहचान</th><th id="`Jc~" class="simple-table-header-color simple-table-header">एक वाक्य उदाहरण (<em>&quot;सूरज डूब गया&quot;</em>)</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80f8-8704-fdb1d89284c2" dir="ltr"><td id="=&lt;Oo" class=""><strong>अभिधा</strong></td><td id="iPkL" class="">वाच्यार्थ</td><td id="CjpH" class="">डिक्शनरी अर्थ, सीधा मतलब।</td><td id="`Jc~" class="">दिन खत्म हो गया।</td></tr><tr id="3ee24f8d-7cec-80d6-9c93-ee9c980a2cd7" dir="ltr"><td id="=&lt;Oo" class=""><strong>लक्षणा</strong></td><td id="iPkL" class="">लक्ष्यार्थ</td><td id="CjpH" class="">मुख्य अर्थ में रुकावट, लक्षित अर्थ।</td><td id="`Jc~" class="">उजाला खत्म, अँधेरा शुरू।</td></tr><tr id="3ee24f8d-7cec-801f-a9a9-e0470dc70de6" dir="ltr"><td id="=&lt;Oo" class=""><strong>व्यंजना</strong></td><td id="iPkL" class="">व्यंग्यार्थ</td><td id="CjpH" class="">प्रसंग के अनुसार छिपा हुआ अर्थ।</td><td id="`Jc~" class="">स्थिति के हिसाब से अलग-अलग काम का समय।</td></tr><tr id="3ee24f8d-7cec-80fb-8e93-c5b4e3f12dcd" dir="ltr"><td id="=&lt;Oo" class=""></td><td id="iPkL" class=""></td><td id="CjpH" class=""></td><td id="`Jc~" class=""></td></tr></tbody></table><hr id="3ee24f8d-7cec-80b7-b153-fcf053c0e602" dir="auto"/><hr id="3ee24f8d-7cec-80ba-91c3-f43134c18be2" dir="auto"/><h3 id="3ee24f8d-7cec-8060-9795-c07f939d77b7" class="" dir="auto">3.1.5 शब्द-शक्तियों का व्यावहारिक अनुप्रयोग एवं निष्कर्ष (Practical Application &amp; Conclusion)</h3><h4 id="3ee24f8d-7cec-80dd-bbf6-c10515a9929f" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-8007-86a8-cc9a584bfa50" class="" dir="auto">अब तक हमने तीनों शब्द-शक्तियों को समझा और उनका तुलनात्मक अध्ययन किया। इस अंतिम भाग (3.1.5) में हम देखेंगे कि <strong>व्यावहारिक जीवन और साहित्य (Literature)</strong> में इन तीनों शब्द-शक्तियों का उपयोग कैसे होता है।</p><blockquote id="3ee24f8d-7cec-80ee-a135-d3d0974eebf6" class="" dir="auto"><strong>सरल सूत्र:</strong><ul id="3ee24f8d-7cec-804c-ab9e-e0508c658bbb" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>अभिधा</strong> ➔ सीधी जानकारी (News &amp; Science)</li></ul><ul id="3ee24f8d-7cec-8091-a3c5-f3bdb8dafe37" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>लक्षणा</strong> ➔ मुहावरे और लोकोक्तियाँ (Idioms &amp; Expressions)</li></ul><ul id="3ee24f8d-7cec-80c9-b032-e1a9ea712cce" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>व्यंजना</strong> ➔ गहरी कविताएँ और व्यंग्य (Poetry &amp; Satire)</li></ul></blockquote><hr id="3ee24f8d-7cec-80bd-af4e-de11d9c3d165" dir="auto"/><h4 id="3ee24f8d-7cec-80ae-8d05-e4c6fdd0f09a" class="" dir="auto">2. व्यावहारिक अनुप्रयोग (Practical Application Chart)</h4><table id="3ee24f8d-7cec-8098-9949-d60cabba1709" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-80a4-939a-f39aa2af9985" dir="ltr"><th id="@W\o" class="simple-table-header-color simple-table-header">क्षेत्र / माध्यम</th><th id="pgsf" class="simple-table-header-color simple-table-header">प्रयोग होने वाली शब्द-शक्ति</th><th id="Z^Kq" class="simple-table-header-color simple-table-header">उदाहरण</th></tr></thead><tbody><tr id="3ee24f8d-7cec-8095-8360-ca6af7ad55cb" dir="ltr"><td id="@W\o" class=""><strong>1. समाचार एवं विज्ञान (News &amp; Science)</strong></td><td id="pgsf" class=""><strong>अभिधा (Abhidha)</strong></td><td id="Z^Kq" class=""><em>&quot;भारत ने मैच जीत लिया।&quot;</em> (सीधा और स्पष्ट अर्थ)</td></tr><tr id="3ee24f8d-7cec-80f1-b4fb-dd324af4f66d" dir="ltr"><td id="@W\o" class=""><strong>2. आम बोलचाल व मुहावरे (Everyday Speech)</strong></td><td id="pgsf" class=""><strong>लक्षणा (Lakshana)</strong></td><td id="Z^Kq" class=""><em>&quot;वह तो शेर है!&quot;</em> (शेर = निडर/बहादुर)</td></tr><tr id="3ee24f8d-7cec-801d-bf90-e6f9ecb6e4d9" dir="ltr"><td id="@W\o" class=""><strong>3. काव्य व व्यंग्य साहित्य (Poetry &amp; Satire)</strong></td><td id="pgsf" class=""><strong>व्यंजना (Vyanjana)</strong></td><td id="Z^Kq" class=""><em>&quot;घंटी बज गई!&quot;</em> (विद्यार्थी के लिए छुट्टी, शिक्षक के लिए पीरियड खत्म)</td></tr></tbody></table><hr id="3ee24f8d-7cec-80bf-87c7-c68ff2c6ee80" dir="auto"/><h4 id="3ee24f8d-7cec-808d-8e24-dd283d195dc5" class="" dir="auto">3. टॉपिक के अनुसार कैरेक्टर कांसेप्ट (Topic-Matched Anime Characters)</h4><p id="3ee24f8d-7cec-80ef-b5c1-eacc84d1edb7" class="" dir="auto">तीनों शब्द-शक्तियों के स्वभाव के आधार पर हमारे एनिमे कैरेक्टर्स का अलग-अलग रूप और व्यक्तित्व:</p><pre id="3ee24f8d-7cec-804f-a4fc-d5e42b033009" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                            ┌─────────────────────────────────────────┐
+                            │    शब्द-शक्ति के अनुसार कैरेक्टर रोल     │
+                            └────────────────────┬────────────────────┘
+                                                 │
+            ┌────────────────────────────────────┼────────────────────────────────────┐
+            ▼                                    ▼                                    ▼
+   1. अभिधा मैडम (Literal)              2. लक्षणा दीदी (Expressive)          3. व्यंजना मैम (Mysterious)
+   • चश्मा, सीधी और सटीक बात             • कूल, ड्रामेटिक और मुहावरेदार शैली    • रहस्यमयी मुस्कान, गहरी बात
+   • &quot;जो लिखा है, वही सच है!&quot;            • &quot;इशारों-इशारों में समझो!&quot;          • &quot;बात में छिपा अर्थ खोजो!&quot;</code></pre><hr id="3ee24f8d-7cec-80bd-a6d2-fddf10309723" dir="auto"/><h3 id="3ee24f8d-7cec-8011-8233-cbacb5a6f5a8" class="" dir="auto"></h3><figure id="3ee24f8d-7cec-803c-9f4e-ffdd4035ca91" class="image" data-notion-image="image%2013.png" dir="ltr"><a href="image%2013.png"><img style="width:890.0377197265625px" src="image%2013.png"/></a></figure><hr id="3ee24f8d-7cec-80ff-8c9b-d32e1dc42163" dir="auto"/><h3 id="3ee24f8d-7cec-80f5-bc12-f8fdb5271732" class="" dir="auto">💡 Quick Recall Table (3.1 का सम्पूर्ण निचोड़)</h3><table id="3ee24f8d-7cec-80f6-9615-d11e960d259c" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-801e-b019-cb78901f21f0" dir="ltr"><th id=";yYH" class="simple-table-header-color simple-table-header">सब-टॉपिक</th><th id="}KRA" class="simple-table-header-color simple-table-header">मुख्य विषय</th><th id="D{`G" class="simple-table-header-color simple-table-header">कैरेक्टर का मिज़ाज</th></tr></thead><tbody><tr id="3ee24f8d-7cec-8095-8f88-f22236a8b4cb" dir="ltr"><td id=";yYH" class=""><strong>3.1.1 अभिधा</strong></td><td id="}KRA" class="">सीधा अर्थ (Literal)</td><td id="D{`G" class="">सीधा, स्पष्ट और सटीक</td></tr><tr id="3ee24f8d-7cec-8073-85fd-e383dc8c2cf1" dir="ltr"><td id=";yYH" class=""><strong>3.1.2 लक्षणा</strong></td><td id="}KRA" class="">लक्षित अर्थ (Indicated)</td><td id="D{`G" class="">ड्रामेटिक, मुहावरेदार और कूल</td></tr><tr id="3ee24f8d-7cec-80b5-a475-f179684a64cc" dir="ltr"><td id=";yYH" class=""><strong>3.1.3 व्यंजना</strong></td><td id="}KRA" class="">व्यंग्यार्थ (Suggested)</td><td id="D{`G" class="">रहस्यमयी, गहरा और विचारशील</td></tr><tr id="3ee24f8d-7cec-80b1-b06b-e7315798e1d4" dir="ltr"><td id=";yYH" class=""><strong>3.1.4 तुलना</strong></td><td id="}KRA" class="">मास्टर कम्पैरिजन (Summary)</td><td id="D{`G" class="">तीनों का एक साथ महा-मुक़ाबला</td></tr><tr id="3ee24f8d-7cec-80fd-9065-f9a86adb3378" dir="ltr"><td id=";yYH" class=""><strong>3.1.5 निष्कर्ष</strong></td><td id="}KRA" class="">व्यावहारिक उपयोग (Application)</td><td id="D{`G" class="">तीनों कैरेक्टर्स की परफेक्ट जोड़ी</td></tr></tbody></table><hr id="3ee24f8d-7cec-8045-95b3-cdde394be29a" dir="auto"/><hr id="3ee24f8d-7cec-802d-88bd-fce6dac33c53" dir="auto"/><h3 id="3ee24f8d-7cec-80ad-be2f-d88a581f5aa3" class="" dir="auto">3.1.6 अभ्यास प्रश्न एवं परीक्षा प्रश्नोत्तरी (Practice Questions &amp; Exam Guide)</h3><h4 id="3ee24f8d-7cec-8083-8188-ebf12c073d53" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-80c9-95df-f167e445772b" class="" dir="auto">अब तक हमने 3.1 के सभी सिद्धांतों को समझ लिया है। परीक्षा में बेहतर अंक पाने के लिए यह जानना सबसे ज़रूरी है कि <strong>प्रश्न किस प्रकार पूछे जाते हैं और उनका सटीक उत्तर कैसे लिखा जाए।</strong></p><blockquote id="3ee24f8d-7cec-809a-b1a9-fd51f558d291" class="" dir="auto"><strong>परीक्षा सूत्र:परिभाषा + 3 शर्तें/भेद + 2 उदाहरण + स्पष्टीकरण = पूरे अंक!</strong></blockquote><hr id="3ee24f8d-7cec-80b8-8dee-ca503ad0e2ec" dir="auto"/><h4 id="3ee24f8d-7cec-80c9-b1cc-faeaae97fc2c" class="" dir="auto">2. वस्तुनिष्ठ प्रश्न (MCQs / Short Questions)</h4><p id="3ee24f8d-7cec-803d-bf58-db79353d83bd" class="" dir="auto"><strong>प्रश्न 1: शब्द की उस शक्ति को क्या कहते हैं जिससे सीधा अर्थ निकलता है?</strong></p><ul id="3ee24f8d-7cec-8038-b653-f3765ef63695" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उत्तर:</strong> (क) अभिधा शब्द-शक्ति (अभिधा से वाच्यार्थ/मुख्यार्थ निकलता है)।</li></ul><p id="3ee24f8d-7cec-80f0-a7cd-e02dda0b9535" class="" dir="auto"><strong>प्रश्न 2: &quot;रमेश तो शेर है!&quot; - इसमें कौन-सी शब्द-शक्ति है?</strong></p><ul id="3ee24f8d-7cec-80b4-a31e-db2b142d5ca4" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उत्तर:</strong> (ख) लक्षणा शब्द-शक्ति (यहाँ शेर का अर्थ &#x27;बहादुर&#x27; लिया गया है)।</li></ul><p id="3ee24f8d-7cec-8016-be22-ef8e249ec436" class="" dir="auto"><strong>प्रश्न 3: &quot;संध्या हो गई!&quot; वाक्य में कौन-सी शब्द-शक्ति कार्य कर रही है?</strong></p><ul id="3ee24f8d-7cec-80c3-89f7-fb24d1a46e6b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>उत्तर:</strong> (ग) व्यंजना शब्द-शक्ति (यहाँ प्रसंग के अनुसार अलग-अलग अर्थ निकल रहे हैं)।</li></ul><hr id="3ee24f8d-7cec-802f-826a-c319bc6c87e4" dir="auto"/><h4 id="3ee24f8d-7cec-800c-afc6-ff97ae85fea1" class="" dir="auto">3. मुख्य परीक्षा प्रश्न (Main Exam Descriptive Questions)</h4><h4 id="3ee24f8d-7cec-804d-83aa-d00df468b950" class="" dir="auto">📝 प्रश्न 1: शब्द-शक्ति किसे कहते हैं? इसके प्रमुख भेदों को उदाहरण सहित स्पष्ट कीजिए। (10 अंक)</h4><p id="3ee24f8d-7cec-80fd-8762-ef42544ae251" class="" dir="auto"><strong>उत्तर लिखने का ढाँचा (Structure):</strong></p><ol type="1" id="3ee24f8d-7cec-80eb-b07a-d924036e7bda" class="numbered-list" start="1" dir="auto"><li><strong>भूमिका:</strong> शब्द और अर्थ के सम्बंध को जगाने वाली शक्ति को &#x27;शब्द-शक्ति&#x27; कहते हैं।</li></ol><ol type="1" id="3ee24f8d-7cec-80a1-85d9-d09494ee2b04" class="numbered-list" start="2" dir="auto"><li><strong>तीन भेद:</strong></li></ol><ul id="3ee24f8d-7cec-80f9-9fd0-e074ee94ba7d" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>अभिधा:</strong> मुख्य/सीधा अर्थ (उदा. <em>गाय खेत में घास चर रही है।</em>)</li></ul><ul id="3ee24f8d-7cec-80a3-813b-e2fd46df7507" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>लक्षणा:</strong> मुख्य अर्थ में बाधा होने पर लक्षित अर्थ (उदा. <em>पंजाब वीर है।</em>)</li></ul><ul id="3ee24f8d-7cec-80aa-8442-cf73c48dfdba" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>व्यंजना:</strong> छिपा हुआ व्यंग्यार्थ (उदा. <em>सूरज डूब गया!</em>)</li></ul><ol type="1" id="3ee24f8d-7cec-803c-9fb0-d0de57797262" class="numbered-list" start="1" dir="auto"><li><strong>निष्कर्ष:</strong> तीनों शक्तियाँ काव्य-सौंदर्य और सम्प्रेषण के लिए अनिवार्य हैं।</li></ol><hr id="3ee24f8d-7cec-806b-9137-ce2cdf8e9384" dir="auto"/><h4 id="3ee24f8d-7cec-80c7-8d3a-d1cb8e4d8c32" class="" dir="auto">📝 प्रश्न 2: लक्षणा और व्यंजना शब्द-शक्ति में मुख्य अंतर स्पष्ट कीजिए। (5 अंक)</h4><table id="3ee24f8d-7cec-8057-a072-ec6500131670" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-804e-94cb-d14b7fd13e9b" dir="ltr"><th id="zpPp" class="simple-table-header-color simple-table-header">तुलना का आधार</th><th id="XF:B" class="simple-table-header-color simple-table-header">लक्षणा शब्द-शक्ति</th><th id="yU=c" class="simple-table-header-color simple-table-header">व्यंजना शब्द-शक्ति</th></tr></thead><tbody><tr id="3ee24f8d-7cec-80fb-b441-ec114409057d" dir="ltr"><td id="zpPp" class=""><strong>1. अर्थ</strong></td><td id="XF:B" class="">इसमें &#x27;लक्ष्यार्थ&#x27; मिलता है।</td><td id="yU=c" class="">इसमें &#x27;व्यंग्यार्थ&#x27; मिलता है।</td></tr><tr id="3ee24f8d-7cec-8036-b350-ca648c864cfc" dir="ltr"><td id="zpPp" class=""><strong>2. शर्त</strong></td><td id="XF:B" class="">मुख्य अर्थ में बाधा होना अनिवार्य है।</td><td id="yU=c" class="">इसमें मुख्य अर्थ के साथ-साथ संदर्भ बदलता है।</td></tr><tr id="3ee24f8d-7cec-8038-bcf7-fb39df59500f" dir="ltr"><td id="zpPp" class=""><strong>3. उदाहरण</strong></td><td id="XF:B" class=""><em>&quot;वह बिल्कुल गधा है!&quot;</em> (गधा = मूर्ख)</td><td id="yU=c" class=""><em>&quot;दस बज गए!&quot;</em> (सोने/काम खत्म करने का समय)</td></tr></tbody></table><hr id="3ee24f8d-7cec-805d-9982-cc0f3b115a2b" dir="auto"/><h3 id="3ee24f8d-7cec-80b0-983b-cfc76d359d26" class="" dir="auto"></h3><figure id="3ee24f8d-7cec-80b4-be56-c072e40b858f" class="image" data-notion-image="image%2014.png" dir="ltr"><a href="image%2014.png"><img style="width:890.0377197265625px" src="image%2014.png"/></a></figure><hr id="3ee24f8d-7cec-80c6-b9df-ebeb96df0a31" dir="auto"/><h3 id="3ee24f8d-7cec-80fe-91fe-f40c73ac03f9" class="" dir="auto">💡 Quick Recall Table (3.1 का फाइनल रिवीजन)</h3><table id="3ee24f8d-7cec-80a4-8df9-f4dd64c3016b" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-8089-8585-d749947de31f" dir="ltr"><th id="buFV" class="simple-table-header-color simple-table-header">प्रश्न का प्रकार</th><th id="Iu|;" class="simple-table-header-color simple-table-header">क्या ध्यान रखना है?</th><th id="sC}Z" class="simple-table-header-color simple-table-header">सबसे कॉमन गलती</th></tr></thead><tbody><tr id="3ee24f8d-7cec-803a-b98e-e847a0bb46d7" dir="ltr"><td id="buFV" class=""><strong>अभिधा</strong></td><td id="Iu|;" class="">सीधा डिक्शनरी अर्थ ढूँढें।</td><td id="sC}Z" class="">इसमें मुहावरे ढूँढने की कोशिश न करें।</td></tr><tr id="3ee24f8d-7cec-80b1-91a3-fa84d642d243" dir="ltr"><td id="buFV" class=""><strong>लक्षणा</strong></td><td id="Iu|;" class="">देखें कि क्या सीधा अर्थ बेतुका लग रहा है?</td><td id="sC}Z" class="">इसे व्यंजना से मिक्स न करें।</td></tr><tr id="3ee24f8d-7cec-80a7-9d85-ed45c52a5ee5" dir="ltr"><td id="buFV" class=""><strong>व्यंजना</strong></td><td id="Iu|;" class="">स्थिति/प्रसंग के अनुसार अर्थ देखें।</td><td id="sC}Z" class="">केवल शब्द का अर्थ न देखें, माहौल समझें।</td></tr><tr id="3ee24f8d-7cec-809f-9b5b-e9093be8cee6" dir="ltr"><td id="buFV" class=""></td><td id="Iu|;" class=""></td><td id="sC}Z" class=""></td></tr></tbody></table><hr id="3ee24f8d-7cec-801c-bfe9-ebdd5ca129c3" dir="auto"/><hr id="3ee24f8d-7cec-80aa-8337-c82b8de82e9c" dir="auto"/><h3 id="3ee24f8d-7cec-80e8-b336-e088e56dc663" class="" dir="auto">3.1.7 शब्द-शक्ति: इकाई समापन एवं मुख्य बिंदु (Unit Conclusion &amp; Summary)</h3><h4 id="3ee24f8d-7cec-80d0-85fb-ccbb7f2c9eb8" class="" dir="auto">1. एकदम आसान शब्दों में समझें (Super Simple Concept)</h4><p id="3ee24f8d-7cec-80ca-b3ee-d72fe9ba8a20" class="" dir="auto">यह <strong>यूनिट 3.1 (शब्द-शक्ति)</strong> का अंतिम और समापन भाग है। यहाँ हमने पूरी इकाई का एक संपूर्ण, त्वरित और परीक्षा-उपयोगी सारांश (Quick Master Summary) तैयार किया है।</p><p id="3ee24f8d-7cec-8031-9f83-ed768f6d80b9" class="" dir="auto">काव्य में शब्द और अर्थ का सम्बंध ही चमत्कार उत्पन्न करता है। जब शब्द बोला जाता है, तो उससे तीन स्तरों पर अर्थ प्राप्त होता है — <strong>वाच्यार्थ (अभिधा)</strong>, <strong>लक्ष्यार्थ (लक्षणा)</strong>, और <strong>व्यंग्यार्थ (व्यंजना)</strong>।</p><blockquote id="3ee24f8d-7cec-8084-ba5e-ed77d6cfa232" class="" dir="auto"><strong>अंतिम महा-सूत्र:</strong><ul id="3ee24f8d-7cec-80b3-8dc2-d158372b8e27" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>अभिधा</strong> = शब्द का <strong>शरीर</strong> (सीधा-सच्चा अर्थ)</li></ul><ul id="3ee24f8d-7cec-8094-972a-d54da9a3f8f3" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>लक्षणा</strong> = शब्द का <strong>अलंकार/आभूषण</strong> (लक्षित/मुहावरेदार अर्थ)</li></ul><ul id="3ee24f8d-7cec-80d1-979d-e035b949e61e" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>व्यंजना</strong> = शब्द की <strong>आत्मा</strong> (गहरा/छिपा हुआ व्यंग्यार्थ)</li></ul></blockquote><hr id="3ee24f8d-7cec-80fd-9a11-f455e42692da" dir="auto"/><h4 id="3ee24f8d-7cec-802f-8755-e7a3726282d7" class="" dir="auto">2. संपूर्ण शब्द-शक्ति मास्टर चार्ट (Unit Master Summary Chart)</h4><pre id="3ee24f8d-7cec-80c9-a1e2-d57050011649" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">                                  ┌───────────────────────────────────────────┐
+                                  │      इकाई 3.1: शब्द-शक्ति (मास्टर मैप)     │
+                                  └─────────────────────┬─────────────────────┘
+                                                        │
+              ┌─────────────────────────────────────────┼─────────────────────────────────────────┐
+              ▼                                         ▼                                         ▼
+     1. अभिधा शब्द-शक्ति                      2. लक्षणा शब्द-शक्ति                      3. व्यंजना शब्द-शक्ति
+   ┌──────────────────────┐                  ┌──────────────────────┐                  ┌──────────────────────┐
+   │ • वाचक शब्द          │                  │ • लाक्षणिक शब्द      │                  │ • व्यंजक शब्द        │
+   │ • वाच्यार्थ / मुख्यार्थ│                  │ • लक्ष्यार्थ          │                  │ • व्यंग्यार्थ        │
+   │ • कोशगत/डिक्शनरी अर्थ│                  │ • मुख्य अर्थ में बाधा │                  │ • संदर्भ/प्रसंग आधारित│
+   └──────────────────────┘                  └──────────────────────┘                  └──────────────────────┘
+              │                                         │                                         │
+              ▼                                         ▼                                         ▼
+   [उदा: &quot;गाय घास चर रही है&quot;]                [उदा: &quot;वह तो बिल्कुल गधा है&quot;]              [उदा: &quot;संध्या के पाँच बज गए&quot;]</code></pre><hr id="3ee24f8d-7cec-808a-8f35-e14b112ebbb8" dir="auto"/><h4 id="3ee24f8d-7cec-808d-89a8-dbcc7acebe31" class="" dir="auto">3. परीक्षा के लिए &#x27;मास्टर की&#x27; (Exam Master Key)</h4><p id="3ee24f8d-7cec-803b-8e8f-d3f11f25422e" class="" dir="auto">परीक्षा में प्रश्न देखते ही 5 सेकंड में सही शब्द-शक्ति पहचानने की जादुई ट्रिक:</p><ol type="1" id="3ee24f8d-7cec-80e1-a71e-f15ab49c0627" class="numbered-list" start="1" dir="auto"><li><strong>क्या वाक्य सुनते ही सीधा अर्थ बिना किसी रुकावट के समझ आ रहा है?</strong><br/>➔ <strong>उत्तर:</strong> अभिधा शब्द-शक्ति।</li></ol><ol type="1" id="3ee24f8d-7cec-80c7-a654-dd9c09f9e798" class="numbered-list" start="2" dir="auto"><li><strong>क्या सीधा अर्थ लेने पर बात बेतुकी लग रही है और कोई मुहावरा/लक्षित अर्थ लिया जा रहा है?</strong><br/>➔ <strong>उत्तर:</strong> लक्षणा शब्द-शक्ति।</li></ol><ol type="1" id="3ee24f8d-7cec-80ff-8cd6-f396adedc7e1" class="numbered-list" start="3" dir="auto"><li><strong>क्या वाक्य एक ही है, लेकिन अलग-अलग स्थिति/व्यक्ति के लिए उसका अर्थ बदल रहा है?</strong><br/>➔ <strong>उत्तर:</strong> व्यंजना शब्द-शक्ति।</li></ol><hr id="3ee24f8d-7cec-8083-b28e-cc8c29887bce" dir="auto"/><figure id="3ee24f8d-7cec-803d-8f54-d6bafbefb045" class="image" data-notion-image="image%2015.png" dir="ltr"><a href="image%2015.png"><img style="width:890.0377197265625px" src="image%2015.png"/></a></figure><hr id="3ee24f8d-7cec-8081-87a9-da8c8d20ca04" dir="auto"/><h3 id="3ee24f8d-7cec-80f4-a917-fc77f2667e40" class="" dir="auto">💡 Final Quick Recall Table (संपूर्ण 3.1 की रिवीजन तालिका)</h3><table id="3ee24f8d-7cec-80e0-b546-f950eace1ef5" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3ee24f8d-7cec-802a-a25c-e0024d60b48e" dir="ltr"><th id="]zIZ" class="simple-table-header-color simple-table-header">सब-टॉपिक</th><th id="TR~x" class="simple-table-header-color simple-table-header">विषय वस्तु</th><th id="xu&gt;N" class="simple-table-header-color simple-table-header">मुख्य बिंदु</th><th id="IXZV" class="simple-table-header-color simple-table-header">अंतिम उदाहरण</th></tr></thead><tbody><tr id="3ee24f8d-7cec-808c-90ca-e92dbb66122e" dir="ltr"><td id="]zIZ" class=""><strong>3.1.1</strong></td><td id="TR~x" class="">अभिधा</td><td id="xu&gt;N" class="">मुख्यार्थ / वाच्यार्थ</td><td id="IXZV" class=""><em>गाय खेत में चर रही है।</em></td></tr><tr id="3ee24f8d-7cec-80eb-bb19-f10e09636ca9" dir="ltr"><td id="]zIZ" class=""><strong>3.1.2</strong></td><td id="TR~x" class="">लक्षणा</td><td id="xu&gt;N" class="">मुख्य अर्थ में बाधा ➔ लक्ष्यार्थ</td><td id="IXZV" class=""><em>रमेश तो बिल्कुल गाय है!</em></td></tr><tr id="3ee24f8d-7cec-8084-beea-dfc455ccfe4a" dir="ltr"><td id="]zIZ" class=""><strong>3.1.3</strong></td><td id="TR~x" class="">व्यंजना</td><td id="xu&gt;N" class="">संदर्भ के अनुसार व्यंग्यार्थ</td><td id="IXZV" class=""><em>संध्या हो गई!</em></td></tr><tr id="3ee24f8d-7cec-80cf-8ba9-f30d7e87740d" dir="ltr"><td id="]zIZ" class=""><strong>3.1.4</strong></td><td id="TR~x" class="">तुलना</td><td id="xu&gt;N" class="">तीनों का तुलनात्मक अध्ययन</td><td id="IXZV" class=""><em>सूरज डूब गया! (3 अर्थ)</em></td></tr><tr id="3ee24f8d-7cec-802a-b258-daaabf187319" dir="ltr"><td id="]zIZ" class=""><strong>3.1.5</strong></td><td id="TR~x" class="">अनुप्रयोग</td><td id="xu&gt;N" class="">साहित्य व जीवन में प्रयोग</td><td id="IXZV" class="">समाचार, मुहावरे व कविता</td></tr><tr id="3ee24f8d-7cec-80c8-bdb8-c5eb9567d7d2" dir="ltr"><td id="]zIZ" class=""><strong>3.1.6</strong></td><td id="TR~x" class="">अभ्यास</td><td id="xu&gt;N" class="">परीक्षा प्रश्नोत्तर व ट्रिक्स</td><td id="IXZV" class="">परिभाषा + 2 उदाहरण सूत्र</td></tr><tr id="3ee24f8d-7cec-80fa-bb0b-fb3be8445f26" dir="ltr"><td id="]zIZ" class=""><strong>3.1.7</strong></td><td id="TR~x" class="">समापन</td><td id="xu&gt;N" class="">मास्टर समरी व क्विक रिवीजन</td><td id="IXZV" class="">पूर्ण इकाई का निचोड़</td></tr></tbody></table><hr id="3ee24f8d-7cec-8054-a399-c59cdc242ed8" dir="auto"/><p id="3ee24f8d-7cec-8055-b9eb-c72196068a5f" class="" dir="auto">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
